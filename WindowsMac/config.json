@@ -1,0 +1,10 @@
+{
+  "url":"https://9.30.123.456/ca/rest/content/v1/",
+  "responseTypeOptions":["JSON","PDF","UTF8"],
+  "jsonOptions":["KVP","DC","OCR","SN","HR","WI","MT","TH","SHW"],
+  "SSO":"'SSO'",
+  "functionId":"janedoe",
+  "password":"password4janedoe",
+  "apiKey":"abc2e942-b5f4-4ec9-bc39-9fc1b51c5544",
+  "logpath":"/Users/janedoe/Library/Application Support/ContentAnalyzer/logs"
+}

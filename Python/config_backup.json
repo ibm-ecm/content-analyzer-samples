@@ -1,0 +1,12 @@
+{
+  "directory_path": "",
+  "output_directory_path": "",
+  "api_key": "",
+  "main_url": "",
+  "output_options": "\"utf8\",\"json\",\"pdf\"",
+  "json_options": "\"ocr\",\"dc\",\"kvp\",\"sn\",\"dc\",\"th\",\"ocr\"",
+  "function_id": "",
+  "password": "",
+  "ssl_verification": false,
+  "file_type": ["pdf", "ppt", "pptx"]
+}

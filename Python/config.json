@@ -1,0 +1,18 @@
+{
+  "directory_path": "/Users/abisolaadeniran/Documents/SP/Democopy2",
+  "output_directory_path": "/Users/abisolaadeniran/Documents/SP/DemoCopyOutput",
+  "api_key": "28f3c96c-c763-4e73-ba72-d9e39036c6ae",
+  "main_url": "https://dev-t4004.blueworkscloud.com/backendhr/ca/rest/content/v1/contentAnalyzer",
+  "output_options": "\"json\"",
+  "json_options": "\"ocr\",\"dc\"",
+  "function_id": "apitest.fid@t4004",
+  "password": "1ex11u1xVZXOIE3eB62WW2vuYuJ+xIgfBPH4tZyR",
+  "ssl_verification": false,
+  "file_type": [
+    "pdf",
+    "docx",
+    "doc",
+    "pptx",
+    "ppt"
+  ]
+}
