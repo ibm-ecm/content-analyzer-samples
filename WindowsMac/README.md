@@ -3,7 +3,7 @@
 This tool consists of installation packages for Windows and MacOS samples. Once installed, you can use the tool for uploading files, checking processing status, downloading and deleting files via the IBM Business Automation Content Analyzer APIs. This sample application can be used as a companion tool to your new Content Analyzer solution.
 
 Please reference the PDF document for details.
-+ **IBM Business Automation Content Analyzer API Sample Tool.pdf**
++ [**IBM Business Automation Content Analyzer API Sample Tool.pdf**](IBM Business Automation Content Analyzer API Sample Tool.pdf)
 
 ### Related Links
 1.	https://www.ibm.com/support/knowledgecenter/SSUM7G/com.ibm.bacanalyzertoc.doc/bacanalyzer_1.0.html

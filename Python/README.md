@@ -1,14 +1,6 @@
-# API Sample Batch Tool - Python package
+# Content Analyzer Sample Tool - Python package
 
 This tool is a python script package for uploading files, checking processing status, downloading and deleting files via the IBM Business Automation Content Analyzer APIs. This sample application can be used as a companion tool to your new Content Analyzer solution.
-
-### Introduction
-
-The IBM Business Automation Content Analyzer is a  cloud-based API web service that can help you rapidly accelerate extraction and classification of data in your documents. Content Analyzer can digitize, classify and extract unstructured document content using OCR and PDF text extraction, and enable Watson and other AI technologies to reveal business insight from your documentation.
-
-Once you have used the web interface to “train” your Content Analyzer instance to recognize your specific ontology of document classes, you will need to incorporate the Content Analyzer API calls into your workflow to integrate the data extraction and document classification capabilities.
-
-Instead of waiting for your custom application to be written to call the Content Analyzer APIs, you can use this sample tool to get started right away. This sample tool can be installed on any system that has the python compiler and is written with the Content Analyzer RESTful APIs as a quick verification tool for your ontology and to jump start your integration. With a simple configuration file, the API Sample tool allows you to upload multiple documents, and automatically download the requested output files.
 
 ### Basic Components
 
@@ -57,16 +49,15 @@ Update [**config.json**](config.json) with your server connection and options in
 6. **json_options**: List of json options. Available values : ocr, dc, kvp, sn, hr, th, mt, wi, shw (case does not matter)
 7. **ssl_verification**: Boolean whether your system uses SSL certificates. Default is boolean False
 8. **function_id** and **password**: Required when authenticating through the IBM Digital Business Automation on Cloud portal.
-9. **file_type**: This is optional but can be specified if user requires specific file types to be uploaded and not all the BACA accepted file types
-
 Created by the administrator in IBM Digital Business Automation on Cloud.
+9. **file_type**: This is optional but can be specified if user requires specific file types to be uploaded and not all the BACA accepted file types
 
 ### Sample config.json
     {
     "directory_path": "/Users/janedoe/test-files",
     "output_directory_path": "/Users/janedoe/output-files",
     "api_key": "39f40e36-040b-4375-a665-b3853107d9c5",
-    "main_url": "https://9.30.123.456/backendsp/ca/rest/content/v1/ContentAnalyzer",
+    "main_url": "https://9.30.123.456/ca/rest/content/v1/ContentAnalyzer",
     "output_options": "\"utf8\",\"json\",\"pdf\"",
     "json_options": "\"ocr\",\"dc\",\"kvp\",\"sn\",\"th\",\"mt\",\"hr\",\"wi\",\"shw\"",
     "function_id": "janedoe",
@@ -78,6 +69,7 @@ Created by the administrator in IBM Digital Business Automation on Cloud.
 ### Run the tool
 The tool will upload all the files found in the input directory and check for processing status. As the output files are ready, they will be downloaded to your output directory. Then the output files will be deleted from the server.
 
++ Update the **config.json** with your configuration settings
 + Make sure the **directory_path** contains all the files you want to process. Files in nested subdirectories will also be processed
 + Run the script from the terminal command line:
       python start.py
