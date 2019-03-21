@@ -50,4 +50,4 @@ if __name__ == '__main__':
 
     endtime = dt.datetime.now()
     seconds = (endtime - starttime).total_seconds()
-    logger.info("API Sample tool ended. Processing time took {0} seconds".format(int(seconds)))
+    logger.info("API Sample tool ended. Processing time took {0} seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with BACA's actual processing time.".format(int(seconds)))
