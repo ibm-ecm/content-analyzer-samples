@@ -50,7 +50,7 @@ def uploadFiles():
                 file_split = new_file.rsplit(".")
                 file_extension = str(file_split[-1].strip())
                 old_file_name = new_file.replace("." + file_extension, '').strip()
-                file_name = re.sub('[^A-Za-z0-9 _]+', ' ', old_file_name) + "." + str(file_extension)
+                file_name = re.sub('[^A-Za-z0-9 _]+', ' ', old_file_name).strip() + "." + str(file_extension)
                 new_file_path = os.path.join(subdir, file_name)
                 if(file_extension != "" and file_extension.lower() in accepted_extensions and file_extension.lower() in file_types):
                     count += 1

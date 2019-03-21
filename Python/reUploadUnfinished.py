@@ -55,7 +55,7 @@ def reUploadFiles():
                         file_split = new_file.rsplit(".")
                         file_extension = str(file_split[-1].strip())
                         old_file_name = new_file.replace("." + file_extension, '').strip()
-                        file_name = re.sub('[^A-Za-z0-9 _]+', ' ', old_file_name) + "." + str(file_extension)
+                        file_name = re.sub('[^A-Za-z0-9 _]+', ' ', old_file_name).strip() + "." + str(file_extension)
 
                         if file_name.lower() in unfinished_files:
                             new_file_path = os.path.join(subdir, file_name)
