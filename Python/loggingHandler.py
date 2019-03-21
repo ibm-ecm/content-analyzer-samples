@@ -17,13 +17,14 @@ DISCLAIMER OF WARRANTIES.
  To run, see README.md
 '''
 import logging, sys
+import logging.handlers
 
 formatter = logging.Formatter('%(asctime)s | %(name)s | %(levelname)s | %(message)s')
 
 logger = logging.getLogger("APISample")
 logger.setLevel(logging.DEBUG)
 
-file_handler = logging.FileHandler('processing.log')
+file_handler = logging.handlers.RotatingFileHandler('processing.log', maxBytes=5*1024*1024, backupCount=2)
 file_handler.setLevel(logging.DEBUG)
 
 

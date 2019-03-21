@@ -24,6 +24,7 @@ from readConfigJSON import readJSON
 import time, copy
 from ssl import SSLError
 from base64 import b64encode
+from urllib import parse as urlparse
 
 '''
     Function to check file status if completed, failed or inprogress
@@ -40,7 +41,7 @@ def checkStatus(configuration_settings, analyzerId):
             encoded_credentials = b64encode(credentials.encode('ascii'))
             headers['Authorization'] = 'Basic %s' % encoded_credentials.decode("utf-8")
 
-    get_url = configuration_settings['main_url'] + "/{0}".format(analyzerId)
+    get_url = urlparse.urljoin(configuration_settings['main_url'], "/{0}".format(analyzerId))
     try:
         response = requests.request("GET", get_url, headers=headers, verify=configuration_settings['ssl_verification'])
         if response.status_code >= 400:
@@ -74,7 +75,7 @@ def downloadFile(configuration_settings, analyzerId, output, output_path, filena
         encoded_credentials = b64encode(credentials.encode('ascii'))
         headers['Authorization'] = 'Basic %s' % encoded_credentials.decode("utf-8")
 
-    get_url = configuration_settings['main_url'] + "/{0}/{1}".format(analyzerId, output.lower())
+    get_url = urlparse.urljoin(configuration_settings['main_url'], "/{0}/{1}".format(analyzerId, output.lower()))
     try:
         response = requests.request("GET", get_url, headers=headers, verify=configuration_settings['ssl_verification'])
         if response.status_code >= 400:
@@ -142,7 +143,7 @@ def downloadFiles():
         output_json_path = os.path.join(os.getcwd(), "output.json")
         if(os.path.exists(output_json_path)):
             while pending_completion and loop < 1000:
-                output_json = json.load(open(output_json_path, "rb"))
+                output_json = json.load(open(output_json_path, "r"))
                 loop += 1
                 logger.info("Loop " + str(loop))
                 if("output_results" in output_json and len(output_json["output_results"]) > 0):

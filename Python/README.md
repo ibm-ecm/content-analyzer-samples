@@ -50,20 +50,20 @@ Update [**config.json**](config.json) with your server connection and options in
 7. **ssl_verification**: Boolean whether your system uses SSL certificates. Default is boolean False
 8. **function_id** and **password**: Required when authenticating through the IBM Digital Business Automation on Cloud portal.
 Created by the administrator in IBM Digital Business Automation on Cloud.
-9. **file_type**: This is optional but can be specified if user requires specific file types to be uploaded and not all the BACA accepted file types
+9. **file_type**: This is optional but can be specified if user requires specific file types to be uploaded and not all the BACA accepted file types (doc, docx, pdf, png, pneg, jpg, jpeg, tif, tiff)
 
 ### Sample config.json
     {
     "directory_path": "/Users/janedoe/test-files",
     "output_directory_path": "/Users/janedoe/output-files",
     "api_key": "39f40e36-040b-4375-a665-b3853107d9c5",
-    "main_url": "https://9.30.123.456/ca/rest/content/v1/ContentAnalyzer",
+    "main_url": "https://9.30.123.456/ca/rest/content/v1",
     "output_options": "\"utf8\",\"json\",\"pdf\"",
     "json_options": "\"ocr\",\"dc\",\"kvp\",\"sn\",\"th\",\"mt\",\"hr\",\"wi\",\"shw\"",
     "function_id": "janedoe",
     "password": "password4janedoe",
     "ssl_verification": false,
-    "file_type":
+    "file_type": ["pdf", "doc"]
     }
 
 ### Run the tool

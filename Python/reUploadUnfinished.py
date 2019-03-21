@@ -36,29 +36,30 @@ def reUploadFiles():
 
         errors = []
         upload_url = configuration_settings['main_url']
-        accepted_extensions = ["pdf", "jpeg", "jpg", "png", "pneg", "tiff", "tif", "docx", "ppt", "doc", "pptx", "xls", "xlsx"]
+        accepted_extensions = configuration_settings["accepted_extensions"]
         file_types = configuration_settings['file_type'] if 'file_type' in configuration_settings and type(
             configuration_settings['file_type'] is list) and len(
             configuration_settings['file_type']) > 0 else accepted_extensions
         output_json_path = os.path.join(os.getcwd(), "output.json")
+        file_types = [f_type.lower() for f_type in file_types]
         if (os.path.exists(output_json_path)):
             output_results = []
             output_json = json.load(open(output_json_path, "rb"))
             if ("unfinished_files" in output_json and len(output_json["unfinished_files"]) > 0):
-                unfinished_files = [output["filename"] for output in output_json["unfinished_files"]]
+                unfinished_files = [output["filename"].lower() for output in output_json["unfinished_files"]]
                 for subdir, dirs, files in os.walk(dir_path):
                     for file in files:
                         file_path = os.path.join(subdir, file)
                         new_file = copy.copy(file)
 
                         file_split = new_file.rsplit(".")
-                        file_extension = str(file_split[-1].strip().lower())
+                        file_extension = str(file_split[-1].strip())
                         old_file_name = new_file.replace("." + file_extension, '').strip()
                         file_name = re.sub('[^A-Za-z0-9 _]+', ' ', old_file_name) + "." + str(file_extension)
 
-                        if file_name in unfinished_files:
+                        if file_name.lower() in unfinished_files:
                             new_file_path = os.path.join(subdir, file_name)
-                            if(file_extension != "" and file_extension in accepted_extensions and file_extension in file_types):
+                            if(file_extension != "" and file_extension.lower() in accepted_extensions and file_extension.lower() in file_types):
                                 count += 1
                                 try:
                                     logger.info("Uploading {0} ".format(new_file_path))

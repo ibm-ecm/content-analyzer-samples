@@ -18,6 +18,7 @@ DISCLAIMER OF WARRANTIES.
 '''
 
 import json, os
+from urllib import parse as urlparse
 from loggingHandler import *
 
 '''
@@ -29,7 +30,7 @@ def readJSON():
     false_result = False, {}
     if(os.path.exists(json_path)):
         try:
-            json_info = json.load(open(json_path, "rb"))
+            json_info = json.load(open(json_path, "r"))
             input_path = json_info["directory_path"]
             true_result = True, json_info
             if(not os.path.exists(input_path)):
@@ -56,6 +57,8 @@ def readJSON():
                         logger.error("JSON selected however no json_options was set")
                         return false_result
                     elif ("json" in json_info["output_options"] or "utf8" in json_info["output_options"] or "pdf" in json_info["output_options"]):
+                        json_info["main_url"] = urlparse.urljoin(json_info["main_url"], "contentAnalyzer") if "contentanalyzer" not in json_info["main_url"].lower() else json_info["main_url"]
+                        json_info["accepted_extensions"] = ["pdf", "jpeg", "jpg", "png", "pneg", "tiff", "tif", "docx", "doc"]
                         return true_result
                     else:
                         logger.error("json, utf8 or pdf was inputted for output_options.")
