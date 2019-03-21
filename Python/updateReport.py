@@ -44,49 +44,50 @@ def updateReport():
         endtime = dt.datetime.now()
         starttime = parser.parse(output_json["starttime"])
 
-        if("output_results" in output_json and len(output_json["output_results"]) > 0):
+        if("output_results" in output_json):
             output_json_result = output_json["output_results"]
-            for outresult in output_json_result:
-                result = outresult
-                output_outputs = result["output_type"]
-                latest_output_outputs = [output.replace("\"", "").upper() for output in output_outputs]
-                unfinished_object = {"filename": result["filename"], "path": result["path"] if "path" in result else "", "full_path": result["full_path"] if "full_path" in result else ""}
-                try:
-                    if("download_success" in result and result["download_success"] == False):
-                        if(result["filename"] not in unfinished_files):
-                            unfinished_files.append(result["filename"])
-                            unfinished_files_with_path.append(unfinished_object)
-                    else:
-                        output_count = 0
-                        for output in latest_output_outputs:
-                            if (output not in result):
-                                if (result["filename"] not in unfinished_files):
-                                    unfinished_files.append(result["filename"])
-                                    unfinished_files_with_path.append(unfinished_object)
-                            if output in result:
-                                output_count += 1
-                                if result[output] == False:
+            if(len(output_json["output_results"]) > 0):
+                for outresult in output_json_result:
+                    result = outresult
+                    output_outputs = result["output_type"]
+                    latest_output_outputs = [output.replace("\"", "").upper() for output in output_outputs]
+                    unfinished_object = {"filename": result["filename"], "path": result["path"] if "path" in result else "", "full_path": result["full_path"] if "full_path" in result else ""}
+                    try:
+                        if("download_success" in result and result["download_success"] == False):
+                            if(result["filename"] not in unfinished_files):
+                                unfinished_files.append(result["filename"])
+                                unfinished_files_with_path.append(unfinished_object)
+                        else:
+                            output_count = 0
+                            for output in latest_output_outputs:
+                                if (output not in result):
                                     if (result["filename"] not in unfinished_files):
                                         unfinished_files.append(result["filename"])
                                         unfinished_files_with_path.append(unfinished_object)
-                        if output_count == 0:
-                            if (result["filename"] not in unfinished_files):
-                                unfinished_files.append(result["filename"])
-                                unfinished_files_with_path.append(unfinished_object)
+                                if output in result:
+                                    output_count += 1
+                                    if result[output] == False:
+                                        if (result["filename"] not in unfinished_files):
+                                            unfinished_files.append(result["filename"])
+                                            unfinished_files_with_path.append(unfinished_object)
+                            if output_count == 0:
+                                if (result["filename"] not in unfinished_files):
+                                    unfinished_files.append(result["filename"])
+                                    unfinished_files_with_path.append(unfinished_object)
 
 
 
-                except:
-                    result["deleted"] = False
-                # new_output_json_result.append(result)
-                seconds = (endtime - starttime).total_seconds()
-                output_json["endtime"] = str(endtime)
-                output_json["total_seconds"] = str(seconds)
-                output_json["unfinished_files"] = unfinished_files_with_path
-                output_json["no_of_unfinished_files"] = len(unfinished_files)
+                    except:
+                        result["deleted"] = False
+            # new_output_json_result.append(result)
+            seconds = (endtime - starttime).total_seconds()
+            output_json["endtime"] = str(endtime)
+            output_json["total_seconds"] = str(seconds)
+            output_json["unfinished_files"] = unfinished_files_with_path
+            output_json["no_of_unfinished_files"] = len(unfinished_files)
 
-                output_json["output_results"] = output_json_result
-                json.dump(output_json, open("output.json", 'w'), indent=4)
+            output_json["output_results"] = output_json_result
+            json.dump(output_json, open("output.json", 'w'), indent=4)
             logger.info("Done updating report in the current directory, output.json")
         else:
             logger.error("No results available for reporting")
