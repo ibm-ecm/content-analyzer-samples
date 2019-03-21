@@ -40,8 +40,7 @@ def checkStatus(configuration_settings, analyzerId):
                 configuration_settings["function_id"], configuration_settings["password"]))
             encoded_credentials = b64encode(credentials.encode('ascii'))
             headers['Authorization'] = 'Basic %s' % encoded_credentials.decode("utf-8")
-
-    get_url = urlparse.urljoin(configuration_settings['main_url'], "/{0}".format(analyzerId))
+    get_url = urlparse.urljoin(configuration_settings['main_url'], "{0}/".format(analyzerId))
     try:
         response = requests.request("GET", get_url, headers=headers, verify=configuration_settings['ssl_verification'])
         if response.status_code >= 400:
@@ -75,7 +74,9 @@ def downloadFile(configuration_settings, analyzerId, output, output_path, filena
         encoded_credentials = b64encode(credentials.encode('ascii'))
         headers['Authorization'] = 'Basic %s' % encoded_credentials.decode("utf-8")
 
-    get_url = urlparse.urljoin(configuration_settings['main_url'], "/{0}/{1}".format(analyzerId, output.lower()))
+    extra_path = "{0}/{1}/".format(analyzerId, output.lower())
+
+    get_url = urlparse.urljoin(configuration_settings['main_url'], extra_path)
     try:
         response = requests.request("GET", get_url, headers=headers, verify=configuration_settings['ssl_verification'])
         if response.status_code >= 400:

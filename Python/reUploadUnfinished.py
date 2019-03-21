@@ -44,7 +44,7 @@ def reUploadFiles():
         file_types = [f_type.lower() for f_type in file_types]
         if (os.path.exists(output_json_path)):
             output_results = []
-            output_json = json.load(open(output_json_path, "rb"))
+            output_json = json.load(open(output_json_path, "r"))
             if ("unfinished_files" in output_json and len(output_json["unfinished_files"]) > 0):
                 unfinished_files = [output["filename"].lower() for output in output_json["unfinished_files"]]
                 for subdir, dirs, files in os.walk(dir_path):

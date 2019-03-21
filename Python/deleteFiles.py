@@ -41,7 +41,7 @@ def deleteFile(configuration_settings, analyzerId):
             encoded_credentials = b64encode(credentials.encode('ascii'))
             headers['Authorization'] = 'Basic %s' % encoded_credentials.decode("utf-8")
 
-    get_url = urlparse.urljoin(configuration_settings['main_url'],  "/{0}".format(analyzerId))
+    get_url = urlparse.urljoin(configuration_settings['main_url'],  "{0}/".format(analyzerId))
     try:
         response = requests.request("DELETE", get_url, headers=headers, verify=configuration_settings['ssl_verification'])
         if response.status_code >= 400:
@@ -68,7 +68,7 @@ def deleteFiles():
     if (configuration):
         output_json_path = os.path.join(os.getcwd(), "output.json")
         if(os.path.exists(output_json_path)):
-            output_json = json.load(open(output_json_path, "rb"))
+            output_json = json.load(open(output_json_path, "r"))
             if("output_results" in output_json and len(output_json["output_results"]) > 0):
                 output_json_result = output_json["output_results"]
                 new_output_json_result = []

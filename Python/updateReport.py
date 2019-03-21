@@ -29,7 +29,7 @@ import datetime as dt
 def updateReport():
     output_json_path = os.path.join(os.getcwd(), "output.json")
     if(os.path.exists(output_json_path)):
-        output_json = json.load(open(output_json_path, "rb"))
+        output_json = json.load(open(output_json_path, "r"))
         new_output_json_result = []
         unfinished_files = []
         unfinished_files_with_path = []
