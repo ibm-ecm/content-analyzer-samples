@@ -58,7 +58,7 @@ def readJSON():
                         return false_result
                     elif ("json" in json_info["output_options"] or "utf8" in json_info["output_options"] or "pdf" in json_info["output_options"]):
                         json_info["main_url"] = json_info["main_url"] + "/" if len(json_info["main_url"].split("v1/")) < 2 else json_info["main_url"]
-                        json_info["main_url"] = urlparse.urljoin(json_info["main_url"], "contentAnalyzer/") if "contentanalyzer" not in json_info["main_url"].lower() else json_info["main_url"]
+                        json_info["main_url"] = urlparse.urljoin(json_info["main_url"], "contentAnalyzer/") if "contentanalyzer" not in json_info["main_url"].lower() else json_info["main_url"] + "/" if "contentanalyzer/" not in json_info["main_url"].lower() else json_info["main_url"]
                         json_info["accepted_extensions"] = ["pdf", "jpeg", "jpg", "png", "pneg", "tiff", "tif", "docx", "doc"]
                         return true_result
                     else:

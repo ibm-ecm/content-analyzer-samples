@@ -41,11 +41,12 @@ def deleteFile(configuration_settings, analyzerId):
             encoded_credentials = b64encode(credentials.encode('ascii'))
             headers['Authorization'] = 'Basic %s' % encoded_credentials.decode("utf-8")
 
+
     get_url = urlparse.urljoin(configuration_settings['main_url'],  "{0}/".format(analyzerId))
     try:
         response = requests.request("DELETE", get_url, headers=headers, verify=configuration_settings['ssl_verification'])
         if response.status_code >= 400:
-            logger.error("An error occurred while trying to get file status.")
+            logger.error("An error occurred while trying to delete file.")
             return False, response.text
         else:
             response_json = json.loads(response.text)
