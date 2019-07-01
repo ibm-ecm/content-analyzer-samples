@@ -3,7 +3,7 @@
   "output_directory_path": "/Users/janedoe/test-output",
   "main_url": "https://9.30.123.456/ca/rest/content/v1/",
   "output_options": "\"utf8\",\"json\",\"pdf\"",
-  "json_options": "\"ocr\",\"dc\",\"kvp\",\"sn\",\"hr\",\"th\",\"mt\",\"wi\",\"shw\"",
+  "json_options": "\"ocr\",\"dc\",\"kvp\",\"sn\",\"hr\",\"th\",\"mt\",\"wi\",\"shw\",\"char\"",
   "ssl_verification": false,
   "file_type": [
     "pdf",

@@ -78,6 +78,7 @@ def uploadFiles():
                                 data={'jsonOptions': configuration_settings['json_options'], 'responseType': configuration_settings['output_options']}, headers=headers, verify=configuration_settings['ssl_verification'])
                         if response.status_code >= 400:
                             logger.error("HTTP error {0} occurred when uploading file: {1} ".format(str(response.status_code), file_path))
+                            logger.error("Error details: {}".format(json.loads(response.text)))
                             dict_object.update({"error": response.text})
                             errors.append(dict_object)
                         else:

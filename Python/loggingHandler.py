@@ -21,7 +21,7 @@ import logging.handlers
 
 formatter = logging.Formatter('%(asctime)s | %(name)s | %(levelname)s | %(message)s')
 
-logger = logging.getLogger("APISample")
+logger = logging.getLogger("ContentAnalyzer")
 logger.setLevel(logging.DEBUG)
 
 file_handler = logging.handlers.RotatingFileHandler('processing.log', maxBytes=5*1024*1024, backupCount=0)

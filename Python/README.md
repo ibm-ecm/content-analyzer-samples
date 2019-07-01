@@ -46,10 +46,11 @@ Update [**config.json**](config.json) with your server connection and options in
 3. **api_key**: Key generated in the API Page from the Content Analyzer web UI. All API usage with this api_key will be tracked on the server.
 4. **main_url**: The URL to the Content Analyzer API server, shown in My Activity tab on the server web UI. Make sure to add /contentAnalyzer to your request URL
 5. **output_options**: List of output options. Available values : json, pdf, utf8 (case does not matter)
-6. **json_options**: List of json options. Available values : ocr, dc, kvp, sn, hr, th, mt, wi, shw (case does not matter)
+6. **json_options**: List of json options. Available values : ocr, dc, kvp, sn, hr, th, mt, ai, ds, char (case does not matter)
 7. **ssl_verification**: Boolean whether your system uses SSL certificates. Default is boolean False
-8. **function_id** and **password**: Required when authenticating through the IBM Digital Business Automation on Cloud portal.
-Created by the administrator in IBM Digital Business Automation on Cloud.
+8. **function_id** and **password**: 
+    + required for SSO users, created by the administrator in IBM Digital Business Automation on Cloud.
+    + required for LDAP users, use your LDAP `username` as the `Functional ID` and your LDAP password in the password field.
 9. **file_type**: This is optional but can be specified if user requires specific file types to be uploaded and not all the BACA accepted file types (doc, docx, pdf, png, pneg, jpg, jpeg, tif, tiff)
 
 ### Sample config.json
@@ -59,7 +60,7 @@ Created by the administrator in IBM Digital Business Automation on Cloud.
     "api_key": "39f40e36-040b-4375-a665-b3853107d9c5",
     "main_url": "https://9.30.123.456/ca/rest/content/v1",
     "output_options": "\"utf8\",\"json\",\"pdf\"",
-    "json_options": "\"ocr\",\"dc\",\"kvp\",\"sn\",\"th\",\"mt\",\"hr\",\"wi\",\"shw\"",
+    "json_options": "\"ocr\",\"dc\",\"kvp\",\"sn\",\"th\",\"mt\",\"hr\",\"ai\",\"ds\",\"char\"",
     "function_id": "janedoe",
     "password": "password4janedoe",
     "ssl_verification": false,
