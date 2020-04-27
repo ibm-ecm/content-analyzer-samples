@@ -14,7 +14,7 @@ Instead of waiting for your custom application to be written to call the Content
 ### Basic Components
 + [**WindowsMac**](WindowsMac) - This folder contains the installation packages for the Windows and MacOS desktop application.
 + [**Python**](Python) - This folder contains the python scripts for API uploading, processing, downloading and deleting.
-+ [**C#**](C#) - This folder contains the C# solution for API uploading, processing, downloading and deleting.
++ [**C#**](C%23) - This folder contains the C# solution for API uploading, processing, downloading and deleting.
 
 ### Configuration Information
 Both of these sample tools need configuration information before running. Please look at the readme file in each folder for more detail.
