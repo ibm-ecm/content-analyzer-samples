@@ -1,0 +1,61 @@
+{
+    "startTime": "2019-06-06T14:40:08.094218-07:00",
+    "no_files": 2,
+    "upload_results": [
+        {
+            "filename": "Car5.pdf",
+            "upload_response": {
+                "status": {
+                    "code": 202,
+                    "messageId": "CIWCA11106",
+                    "message": "Content Analyzer request was created"
+                },
+                "data": {
+                    "message": "json,pdf,utf8 processing request was created successful",
+                    "fileNameIn": "Car5.pdf",
+                    "analyzerId": "a793d140-88a3-11e9-9d17-d5ab12e06dc3",
+                    "type": [
+                        "json",
+                        "pdf",
+                        "utf8"
+                    ]
+                }
+            },
+            "analyzerId": "a793d140-88a3-11e9-9d17-d5ab12e06dc3",
+            "deleted": true,
+            "time_elapsed": "6.372492 s",
+            "json": "downloaded",
+            "pdf": "downloaded",
+            "utf8": "downloaded"
+        },
+        {
+            "filename": "car.pdf",
+            "upload_response": {
+                "status": {
+                    "code": 202,
+                    "messageId": "CIWCA11106",
+                    "message": "Content Analyzer request was created"
+                },
+                "data": {
+                    "message": "json,pdf,utf8 processing request was created successful",
+                    "fileNameIn": "car.pdf",
+                    "analyzerId": "a8009cd0-88a3-11e9-9d17-d5ab12e06dc3",
+                    "type": [
+                        "json",
+                        "pdf",
+                        "utf8"
+                    ]
+                }
+            },
+            "analyzerId": "a8009cd0-88a3-11e9-9d17-d5ab12e06dc3",
+            "deleted": true,
+            "time_elapsed": "5.255922 s",
+            "json": "downloaded",
+            "pdf": "downloaded",
+            "utf8": "downloaded"
+        }
+    ],
+    "total_upload_seconds": 1.357496,
+    "upload_errors": [],
+    "total_secodes": 12.193595
+}

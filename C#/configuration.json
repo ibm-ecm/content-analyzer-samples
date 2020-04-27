@@ -1,0 +1,12 @@
+{
+  "functionalID": "test.fid@t0006",
+  "password": "bMksr1hsoathoyhkeGb2YnmSewSoWFxapfQ92Ob",
+  "LDAP_userName": "",
+  "LDAP_password": "",
+  "apiKey": "MGQzODY0Ydhitpeit836093dha;GFDDDg0NDY5ZTFhO3h5aWJtO2RlZmF1bHQ=",
+  "mainURL": "https://ip_address/backendsp/ca/rest/content/v1",
+  "responseType": "\"JSON\", \"PDF\", \"UTF8\"",
+  "jsonOptions": "\"ocr\",\"dc\",\"kvp\",\"sn\"",
+  "directoryPath": "/Users/Administrator/ContentAnalyzer/CASendDocs",
+  "outputDirectoryPath": "/Users/Administrator/ContentAnalyzer/CAGetDocs"
+}

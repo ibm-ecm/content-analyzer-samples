@@ -1,0 +1,23 @@
+2019-06-06 14:34:26.4586|INFO|Start.start|==========Content Analyzer C# API Batch Tool=========
+2019-06-06 14:34:26.4756|INFO|Start.start|Logs can be found in the directory, C#/Start/bin/Debug/; Processing details can be found in C#/output.json
+2019-06-06 14:34:26.4763|INFO|Start.start|Start Uploading Files
+2019-06-06 14:34:29.2025|INFO|ContentAnalyzer.UploadFiles|Uploaded all the files
+2019-06-06 14:34:29.2028|INFO|Start.start|Ready to check the processing status and download the output files
+2019-06-06 14:34:29.2104|INFO|ContentAnalyzer.DownloadFiles|Check processing status: loop 1
+2019-06-06 14:34:34.2145|INFO|ContentAnalyzer.DownloadFiles|Checking status of analyzerId: dbfa6350-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:34.3130|INFO|ContentAnalyzer.DownloadFiles|Downloading the pdf output of the analyzerId: dbfa6350-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:34.3435|INFO|ContentAnalyzer.DownloadFiles|Downloading the utf8 output of the analyzerId: dbfa6350-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:34.3458|INFO|ContentAnalyzer.DownloadFiles|Checking status of analyzerId: dd309960-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:34.4219|INFO|ContentAnalyzer.DownloadFiles|Downloading the pdf output of the analyzerId: dd309960-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:34.4471|INFO|ContentAnalyzer.DownloadFiles|Downloading the utf8 output of the analyzerId: dd309960-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:34.4489|INFO|ContentAnalyzer.DownloadFiles|Number of unfinished files: 2
+2019-06-06 14:34:34.4489|INFO|ContentAnalyzer.DownloadFiles|Check processing status: loop 2
+2019-06-06 14:34:39.4533|INFO|ContentAnalyzer.DownloadFiles|Checking status of analyzerId: dbfa6350-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:39.5658|INFO|ContentAnalyzer.DownloadFiles|Downloading the json output of the analyzerId: dbfa6350-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:39.5734|INFO|ContentAnalyzer.DownloadFiles|Checking status of analyzerId: dd309960-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:39.6601|INFO|ContentAnalyzer.DownloadFiles|Downloading the json output of the analyzerId: dd309960-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:39.6630|INFO|ContentAnalyzer.DownloadFiles|Number of unfinished files: 0
+2019-06-06 14:34:39.6632|INFO|Start.start|Start deleting the files from the server
+2019-06-06 14:34:39.6652|INFO|ContentAnalyzer.DeleteFiles|Deleting the output of the analyzerId: dbfa6350-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:39.7949|INFO|ContentAnalyzer.DeleteFiles|Deleting the output of the analyzerId: dd309960-88a2-11e9-9d17-d5ab12e06dc3
+2019-06-06 14:34:39.8968|INFO|Start.start|Completed. The total seconds is: 13.670318
