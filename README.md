@@ -1,4 +1,4 @@
-# Content Analyzer Sample Tools
+# Document Processing Sample Tools
 
 The sample tools can be used for uploading files, checking processing status, downloading and deleting files via the IBM Document Processing APIs.
 
