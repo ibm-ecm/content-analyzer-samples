@@ -9,7 +9,7 @@ This tool is a python script package for uploading files, checking processing st
 + [**reupload.py**](reupload.py) - Starting point of the tool that will redo the failed or unfinished processing: re-upload, download, and delete
 
 + [**readConfigJSON.py**](readConfigJSON.py) - Verify the configuration file
-+ [**checkToken.py**] (checkToken.py) - Check or generate the UMS token for authentication
++ [**checkToken.py**](checkToken.py) - Check or generate the UMS token for authentication
 + [**uploadFiles.py**](uploadFiles.py) - Call directly just to do uploads
 + [**downloadFiles.py**](downloadFiles.py) - Call directly just to do downloads
 + [**deleteFiles.py**](deleteFiles.py) - Call directly just to do deletes
@@ -79,7 +79,7 @@ The tool will upload all the files found in the input directory and check for pr
 + Update the **config.json** with your configuration settings
 + Make sure the **directory_path** contains all the files you want to process. Files in nested subdirectories will also be processed
 + Run the script from the terminal command line:
-      python start.py
+      `python start.py`
 + Monitor the console log.
 
 ### Rerun the tool
@@ -90,15 +90,15 @@ your output directory. Then the output files will be deleted from the server.
 
 + You may want to backup the processing.log and the **output.json** and delete these files before calling reupload.
 + Run the script from the terminal command line:
-      python reupload.py
+      `python reupload.py`
 + Monitor the console log.
 
 ### Run the individual python scripts
 You may want to rerun individual Python scripts, for example to download the output files again or to clean up the files on the
 server. These scripts rely on previous uploads and references the **output.json** file that was generated.
 + Run the scripts from the terminal command line:
-      python downloadFiles.py
-      python deleteFiles.py
+      `python downloadFiles.py`
+      `python deleteFiles.py`
 + Monitor the console log.
 
 ### Output
@@ -108,13 +108,9 @@ server. These scripts rely on previous uploads and references the **output.json*
 + Check the output_directory for the output files
 + The output files are immediately deleted from the server
 
-### Important Note
-+ The Content Analyzer server will track all usage from the **api_key** used in the API calls.
-Do not share the **api_key** or the **function_id** or the **password**. Keep the **config.json** file in a
-secure place.
 
 ### Related Links
-1.	https://www.ibm.com/support/knowledgecenter/SSYHZ8_20.0.x/com.ibm.dba.dp/topics/con_ca_api.html
+https://www.ibm.com/support/knowledgecenter/SSYHZ8_20.0.x/com.ibm.dba.dp/topics/con_ca_api.html
 
 
 ### DISCLAIMER OF WARRANTIES

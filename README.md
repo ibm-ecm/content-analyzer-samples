@@ -3,7 +3,7 @@
 The sample tools can be used for uploading files, checking processing status, downloading and deleting files via the IBM Document Processing APIs.
 
 ### Platforms
-+ [**ADP**](ADP) - This folder contains sample tools for Automation Document Processing - Python.
++ [**ADP**](ADP/Python) - This folder contains sample tools for Automation Document Processing - Python.
 + [**ContentAnalyzer**](ContentAnalyzer) - This folder contains the sample tools for Content Analyzer - Python, C#, WindowsMac.
 
 ### Disclaimers
