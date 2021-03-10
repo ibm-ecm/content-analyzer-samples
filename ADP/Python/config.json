@@ -1,0 +1,20 @@
+{
+  "ums_base_url": "https://sample-ums/ibm.com",
+  "ums_username": "",
+  "ums_password": "",
+
+  "aca_base_url": "https://sample-aca-backend.ibm.com",
+  "adp_project_id": "your-project-id",
+
+  "directory_path": "/sample/input",
+  "output_directory_path": "/sample/output",
+
+  "output_options": "json",
+  "json_options": "ocr,dc,kvp,sn,hr,th,mt,ai,ds",
+  "ssl_verification": false,
+  "file_type": [
+    "pdf",
+    "docx",
+    "doc"
+  ]
+}

@@ -1,0 +1,912 @@
+2021-03-09 10:33:23,160 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:33:23,160 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:33:23,160 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:33:23,161 | ContentAnalyzer | ERROR | Cannot find directory_path .
+2021-03-09 10:33:23,161 | ContentAnalyzer | ERROR | Check your configuration file (config.json) for correct format and valid parameters
+2021-03-09 10:33:23,161 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 10:42:31,211 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:42:31,212 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:42:31,212 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:42:31,212 | ContentAnalyzer | ERROR | Error reading configuration file /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/content-analyzer-samples/ADP_Python/config.json
+2021-03-09 10:42:31,212 | ContentAnalyzer | ERROR | Exception: name 'aca_base_url' is not defined
+2021-03-09 10:42:31,212 | ContentAnalyzer | ERROR | Check your configuration file (config.json) for correct format and valid parameters
+2021-03-09 10:42:31,212 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 10:44:34,421 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:44:34,421 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:44:34,421 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:44:34,468 | ContentAnalyzer | ERROR | Failed to check the client due to exception
+2021-03-09 10:44:34,468 | ContentAnalyzer | DEBUG | HTTPSConnectionPool(host='ums-sso.aca-2101.apps.orphreys.os.fyre.ibm.com', port=443): Max retries exceeded with url: /oidc/endpoint/ums/registration/ADP_PYTHON_CLIENT (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10826a8d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2021-03-09 10:44:34,469 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 10:46:25,984 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:46:25,984 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:46:25,984 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:46:25,991 | ContentAnalyzer | ERROR | Failed to check the client due to exception
+2021-03-09 10:46:25,991 | ContentAnalyzer | DEBUG | HTTPSConnectionPool(host='ums-sso.aca-2101.apps.orphreys.os.fyre.ibm.com', port=443): Max retries exceeded with url: /oidc/endpoint/ums/registration/ADP_PYTHON_CLIENT (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1099fb990>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2021-03-09 10:46:25,991 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 10:47:31,982 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:47:32,000 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:47:32,000 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:47:32,478 | ContentAnalyzer | INFO | Need to register the client
+2021-03-09 10:47:32,478 | ContentAnalyzer | ERROR | Failed to check the client due to exception
+2021-03-09 10:47:32,478 | ContentAnalyzer | DEBUG | name 'true' is not defined
+2021-03-09 10:47:32,478 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 10:48:36,166 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:48:36,166 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:48:36,166 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:48:36,473 | ContentAnalyzer | INFO | Need to register the client
+2021-03-09 10:48:37,336 | ContentAnalyzer | ERROR | Failed to register the client
+2021-03-09 10:48:37,336 | ContentAnalyzer | DEBUG | {'error_description': 'The request must contain content-type of "application/json"', 'error': 'invalid_request'}
+2021-03-09 10:48:37,336 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 10:50:15,334 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:50:15,334 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:50:15,335 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:50:15,613 | ContentAnalyzer | INFO | Need to register the client
+2021-03-09 10:50:16,005 | ContentAnalyzer | INFO | Successfully registered the client
+2021-03-09 10:51:45,997 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:51:45,997 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:51:45,997 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:52:06,264 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:52:06,264 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:52:06,264 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:52:06,555 | ContentAnalyzer | ERROR | Failed to generate a token due to exception
+2021-03-09 10:52:06,555 | ContentAnalyzer | DEBUG | name 'paylod' is not defined
+2021-03-09 10:52:06,555 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 10:52:27,470 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:52:27,471 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:52:27,471 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:52:27,860 | ContentAnalyzer | ERROR | Failed to generate a token due to exception
+2021-03-09 10:52:27,860 | ContentAnalyzer | DEBUG | name 'paylod' is not defined
+2021-03-09 10:52:27,861 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 10:52:49,485 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:52:49,485 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:52:49,486 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:52:50,008 | ContentAnalyzer | ERROR | Failed to generate a token due to exception
+2021-03-09 10:52:50,008 | ContentAnalyzer | DEBUG | request() got an unexpected keyword argument 'body'
+2021-03-09 10:52:50,008 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 10:54:43,742 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:54:43,742 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:54:43,742 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:54:46,326 | ContentAnalyzer | ERROR | Failed to generate a token
+2021-03-09 10:54:46,326 | ContentAnalyzer | DEBUG | {'error_description': 'CWOAU0025E: The grant_type parameter was invalid: unknown', 'error': 'unsupported_grant_type'}
+2021-03-09 10:54:46,326 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 10:56:52,597 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:56:52,598 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:56:52,598 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:56:53,335 | ContentAnalyzer | INFO | Successfully got the token
+2021-03-09 10:56:53,335 | ContentAnalyzer | INFO | Successfully generate ums token {}, continue
+2021-03-09 10:58:43,449 | ContentAnalyzer | INFO | **************************************
+2021-03-09 10:58:43,449 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 10:58:43,449 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 10:58:44,327 | ContentAnalyzer | INFO | Successfully got the token
+2021-03-09 10:58:44,327 | ContentAnalyzer | INFO | Successfully generate ums token {}, continue
+2021-03-09 11:02:28,357 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:02:28,357 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:02:28,357 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:02:29,198 | ContentAnalyzer | INFO | Successfully got the token Rh2eU81iOpg7AfXkEu3CY9AqRCLPYtZQx04HRRld
+2021-03-09 11:02:29,199 | ContentAnalyzer | INFO | Successfully generate ums token {}, continue
+2021-03-09 11:03:58,711 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:03:58,711 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:03:58,711 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:03:59,315 | ContentAnalyzer | INFO | Successfully got the token 4hBnnj9tfe4H58nxwGibEES9acPL63PpJapMDb6n
+2021-03-09 11:03:59,315 | ContentAnalyzer | INFO | Successfully generate ums token {}, continue
+2021-03-09 11:05:05,695 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:05:05,695 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:05:05,695 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:05:06,277 | ContentAnalyzer | INFO | Successfully got the token ilgEd0COlOrOrG28g9I0KMTHsWArN65imMF61WtH
+2021-03-09 11:05:06,277 | ContentAnalyzer | INFO | Successfully generate ums token {}, continue
+2021-03-09 11:05:38,194 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:05:38,194 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:05:38,194 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:05:38,772 | ContentAnalyzer | INFO | Successfully got the token 2EMo2u9G6Zj0SZnMxxqr8X1CLgwgCKwSCvB77ZNy
+2021-03-09 11:05:38,772 | ContentAnalyzer | INFO | Successfully generate ums token {}, continue
+2021-03-09 11:06:09,876 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:06:09,877 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:06:09,877 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:06:10,486 | ContentAnalyzer | INFO | Successfully got the token KZ3Wyvhxu4O2AoiB1MMC67gQYlPCwPdylfgj6s1g
+2021-03-09 11:06:10,486 | ContentAnalyzer | INFO | Successfully generate ums token {}, continue
+2021-03-09 11:09:14,985 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:09:14,986 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:09:14,986 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:09:15,768 | ContentAnalyzer | INFO | Successfully got the token 8Qc8MQkksgxBTT559Hn7Her9JhTz7HKDpH5deRbs
+2021-03-09 11:09:15,769 | ContentAnalyzer | INFO | Successfully generate ums token 8Qc8MQkksgxBTT559Hn7Her9JhTz7HKDpH5deRbs, continue
+2021-03-09 11:09:15,769 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 11:11:39,521 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:11:39,522 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:11:39,522 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:11:40,195 | ContentAnalyzer | INFO | Successfully got the token hG8rURiYjYqRVwfcKKYTNbeEx16WzhAiHhIsgq3O
+2021-03-09 11:11:40,195 | ContentAnalyzer | INFO | Successfully generate ums token hG8rURiYjYqRVwfcKKYTNbeEx16WzhAiHhIsgq3O, continue
+2021-03-09 11:11:40,195 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 11:12:10,856 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:12:10,857 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:12:10,857 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:12:11,502 | ContentAnalyzer | INFO | Successfully got the token CRriRHwqtQMmSfFaOPkf7PKFIbrPIlEpAQ2abQTL
+2021-03-09 11:12:11,502 | ContentAnalyzer | INFO | Successfully generate ums token CRriRHwqtQMmSfFaOPkf7PKFIbrPIlEpAQ2abQTL, continue
+2021-03-09 11:12:11,503 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 11:12:12,886 | ContentAnalyzer | ERROR | Failed to check the token valid or not
+2021-03-09 11:12:12,886 | ContentAnalyzer | DEBUG | {'error_description': 'CWWKS1405E: The introspect request did not have a token parameter. The request URI was /oidc/endpoint/ums/introspect.', 'error': 'invalid_request'}
+2021-03-09 11:12:12,886 | ContentAnalyzer | ERROR | UMS token is required to upload the files
+2021-03-09 11:12:12,886 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 2 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 11:15:24,108 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:15:24,108 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:15:24,109 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:15:25,043 | ContentAnalyzer | INFO | Successfully got the token tOgQ1q70LxeAme5kercCisafFPPtxYESVcDQXSM4
+2021-03-09 11:15:25,043 | ContentAnalyzer | INFO | Successfully generate ums token tOgQ1q70LxeAme5kercCisafFPPtxYESVcDQXSM4, continue
+2021-03-09 11:15:25,043 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 11:15:25,312 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 11:15:25,314 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 11:15:34,013 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 11:15:40,468 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 11:15:40,468 | ContentAnalyzer | INFO | Done uploading 2 files
+2021-03-09 11:15:40,468 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 11:15:41,342 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 11:15:41,343 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 11:15:41,343 | ContentAnalyzer | ERROR | We could not find any information to download files from.
+2021-03-09 11:15:41,343 | ContentAnalyzer | ERROR | We could not find any information to download files from.
+2021-03-09 11:15:41,344 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 11:15:41,344 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 11:15:41,344 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 11:23:59,234 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:23:59,234 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:23:59,234 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:24:00,228 | ContentAnalyzer | INFO | Successfully got the token 3MQqS6BIg0Ost9yvwgJJEKj4ox0gf8z5Vc8cMto2
+2021-03-09 11:24:00,228 | ContentAnalyzer | INFO | Successfully generate ums token 3MQqS6BIg0Ost9yvwgJJEKj4ox0gf8z5Vc8cMto2, continue
+2021-03-09 11:24:00,228 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 11:24:00,491 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 11:24:00,492 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 11:24:08,024 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 11:24:14,117 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 11:24:14,117 | ContentAnalyzer | INFO | Done uploading 2 files
+2021-03-09 11:24:14,117 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 11:24:14,370 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 11:24:14,371 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 11:24:14,371 | ContentAnalyzer | ERROR | We could not find any information to download files from.
+2021-03-09 11:24:14,372 | ContentAnalyzer | ERROR | We could not find any information to download files from.
+2021-03-09 11:24:14,373 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 11:24:14,373 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 11:24:14,373 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 11:24:14,662 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 11:24:14,664 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 11:24:14,664 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 11:24:14,664 | ContentAnalyzer | INFO | Updating report
+2021-03-09 11:24:14,665 | ContentAnalyzer | INFO | Done updating report in the current directory, output.json
+2021-03-09 11:24:14,665 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 15 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 11:35:11,197 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:35:11,198 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:35:11,198 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:35:12,108 | ContentAnalyzer | INFO | Successfully got the token 563e5epSXICbmmIPhFGigZl4SGtLLVYOfT8AfgWv
+2021-03-09 11:35:12,108 | ContentAnalyzer | INFO | Successfully generate ums token 563e5epSXICbmmIPhFGigZl4SGtLLVYOfT8AfgWv, continue
+2021-03-09 11:35:12,108 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 11:35:12,369 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 11:35:12,369 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 11:35:21,029 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 11:35:24,224 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 11:35:24,224 | ContentAnalyzer | INFO | Done uploading 2 files
+2021-03-09 11:35:24,224 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 11:35:24,509 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 11:35:24,510 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 11:35:24,510 | ContentAnalyzer | ERROR | We could not find any information to download files from.
+2021-03-09 11:35:24,511 | ContentAnalyzer | ERROR | We could not find any information to download files from.
+2021-03-09 11:35:24,511 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 11:35:24,512 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 11:35:24,512 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 11:35:24,887 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 11:35:24,888 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 11:35:24,888 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 11:35:24,888 | ContentAnalyzer | INFO | Updating report
+2021-03-09 11:35:24,891 | ContentAnalyzer | INFO | Done updating report in the current directory, output.json
+2021-03-09 11:35:24,891 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 13 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 11:53:17,541 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:53:17,542 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 11:53:17,542 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:53:18,378 | ContentAnalyzer | INFO | Successfully got the token 0gtuxPTHV5x6krcxwyXTpGVGGWxy3G1M954jLPt4
+2021-03-09 11:53:18,379 | ContentAnalyzer | INFO | Successfully generate ums token 0gtuxPTHV5x6krcxwyXTpGVGGWxy3G1M954jLPt4, continue
+2021-03-09 11:53:18,379 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 11:53:18,648 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 11:53:18,649 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 11:53:23,123 | ContentAnalyzer | ERROR | HTTP error 400 occurred when uploading file: /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 11:53:23,123 | ContentAnalyzer | ERROR | Error details: {'status': {'code': 400, 'messageId': 'CIWCA50002', 'message': 'Client Error'}, 'result': [{'status': {'code': 400, 'messageId': 'CIWCA11101', 'message': 'Invalid parameters passed in the Content Analyzer request'}, 'errors': [{'errorId': 'CIWCA16037', 'explanation': 'Parameters in responseType is invalid', 'action': 'Please provide a correct value: json, pdf, utf8'}]}]}
+2021-03-09 11:53:23,124 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 11:53:27,425 | ContentAnalyzer | ERROR | HTTP error 400 occurred when uploading file: /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice-Page-1.pdf 
+2021-03-09 11:53:27,425 | ContentAnalyzer | ERROR | Error details: {'status': {'code': 400, 'messageId': 'CIWCA50002', 'message': 'Client Error'}, 'result': [{'status': {'code': 400, 'messageId': 'CIWCA11101', 'message': 'Invalid parameters passed in the Content Analyzer request'}, 'errors': [{'errorId': 'CIWCA16037', 'explanation': 'Parameters in responseType is invalid', 'action': 'Please provide a correct value: json, pdf, utf8'}]}]}
+2021-03-09 11:53:27,426 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 11:53:27,426 | ContentAnalyzer | ERROR | Errors occurred during upload.
+2021-03-09 11:53:27,426 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 11:53:27,676 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 11:53:27,676 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 11:53:27,677 | ContentAnalyzer | ERROR | No results available to download.
+2021-03-09 11:53:27,677 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 11:53:28,037 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 11:53:28,037 | ContentAnalyzer | ERROR | No results found that needs deleting.
+2021-03-09 11:53:28,038 | ContentAnalyzer | INFO | Updating report
+2021-03-09 11:53:28,039 | ContentAnalyzer | INFO | Done updating report in the current directory, output.json
+2021-03-09 11:53:28,039 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 10 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 11:54:07,595 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:54:07,595 | ContentAnalyzer | INFO | API Sample tool readConfigJSON starting...
+2021-03-09 11:54:07,595 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:54:07,596 | ContentAnalyzer | INFO | No errors found in configuration file
+2021-03-09 11:55:41,122 | ContentAnalyzer | INFO | **************************************
+2021-03-09 11:55:41,122 | ContentAnalyzer | INFO | API Sample tool readConfigJSON starting...
+2021-03-09 11:55:41,122 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 11:55:41,122 | ContentAnalyzer | INFO | No errors found in configuration file
+2021-03-09 12:03:46,979 | ContentAnalyzer | INFO | **************************************
+2021-03-09 12:03:46,980 | ContentAnalyzer | INFO | API Sample tool readConfigJSON starting...
+2021-03-09 12:03:46,980 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 12:03:46,980 | ContentAnalyzer | ERROR | utf9 cannot be in output_options. Only json, pdf supported
+2021-03-09 12:03:46,980 | ContentAnalyzer | INFO | No errors found in configuration file
+2021-03-09 12:04:30,275 | ContentAnalyzer | INFO | **************************************
+2021-03-09 12:04:30,275 | ContentAnalyzer | INFO | API Sample tool readConfigJSON starting...
+2021-03-09 12:04:30,276 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 12:04:30,276 | ContentAnalyzer | ERROR | utf9 cannot be in output_options. Only json, pdf supported
+2021-03-09 12:05:03,876 | ContentAnalyzer | INFO | **************************************
+2021-03-09 12:05:03,876 | ContentAnalyzer | INFO | API Sample tool readConfigJSON starting...
+2021-03-09 12:05:03,876 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 12:05:27,302 | ContentAnalyzer | INFO | **************************************
+2021-03-09 12:05:27,302 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 12:05:27,302 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 12:05:28,229 | ContentAnalyzer | INFO | Successfully got the token imripFTTvQrqwfLFXscTQTi801vDBLHRxRcHW8Zl
+2021-03-09 12:05:28,229 | ContentAnalyzer | INFO | Successfully generate ums token imripFTTvQrqwfLFXscTQTi801vDBLHRxRcHW8Zl, continue
+2021-03-09 12:05:28,229 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 12:05:28,514 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 12:05:28,514 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 12:05:36,121 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 12:05:43,222 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 12:05:43,222 | ContentAnalyzer | INFO | Done uploading 2 files
+2021-03-09 12:05:43,223 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 12:05:43,602 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 12:05:43,603 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 12:05:43,603 | ContentAnalyzer | INFO | Checking status of analyzerId: ce1291d0-8112-11eb-a5f0-adf91eac12ae
+2021-03-09 12:05:44,141 | ContentAnalyzer | ERROR | An error occurred while trying to get file status.
+2021-03-09 12:05:44,142 | ContentAnalyzer | INFO | Checking status of analyzerId: d253e500-8112-11eb-a591-cdefc0869c92
+2021-03-09 12:05:44,658 | ContentAnalyzer | ERROR | An error occurred while trying to get file status.
+2021-03-09 12:05:44,660 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 12:05:44,660 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 12:05:44,660 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 12:05:45,213 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 12:05:45,214 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 12:05:45,215 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 12:05:45,215 | ContentAnalyzer | INFO | Updating report
+2021-03-09 12:05:45,216 | ContentAnalyzer | INFO | Done updating report in the current directory, output.json
+2021-03-09 12:05:45,216 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 17 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 13:46:34,424 | ContentAnalyzer | INFO | **************************************
+2021-03-09 13:46:34,424 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 13:46:34,424 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 13:46:34,919 | ContentAnalyzer | INFO | ums token provided is invalid or expired, trying to generate a new one
+2021-03-09 13:46:34,919 | ContentAnalyzer | ERROR | Failed to check the token valid or not due to exception
+2021-03-09 13:46:34,919 | ContentAnalyzer | DEBUG | 'client_id'
+2021-03-09 13:46:34,920 | ContentAnalyzer | ERROR | UMS token is required to download the files
+2021-03-09 13:47:54,012 | ContentAnalyzer | INFO | **************************************
+2021-03-09 13:47:54,013 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 13:47:54,014 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 13:47:54,278 | ContentAnalyzer | INFO | ums token provided is invalid or expired, trying to generate a new one
+2021-03-09 13:47:54,278 | ContentAnalyzer | ERROR | Failed to check the token valid or not due to exception
+2021-03-09 13:47:54,278 | ContentAnalyzer | DEBUG | 'client_id'
+2021-03-09 13:47:54,278 | ContentAnalyzer | ERROR | UMS token is required to download the files
+2021-03-09 13:48:25,788 | ContentAnalyzer | INFO | **************************************
+2021-03-09 13:48:25,789 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 13:48:25,789 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 13:48:26,064 | ContentAnalyzer | INFO | ums token provided is invalid or expired, trying to generate a new one
+2021-03-09 13:48:26,433 | ContentAnalyzer | INFO | Successfully got the token dyJFBkpitdDHDF0jkchD0zuLmxJlW2gNeMtbmMc3
+2021-03-09 13:48:26,435 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 13:48:31,440 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 13:48:36,446 | ContentAnalyzer | INFO | Loop 3
+2021-03-09 13:48:41,449 | ContentAnalyzer | INFO | Loop 4
+2021-03-09 13:48:46,453 | ContentAnalyzer | INFO | Loop 5
+2021-03-09 13:48:51,458 | ContentAnalyzer | INFO | Loop 6
+2021-03-09 13:48:56,466 | ContentAnalyzer | INFO | Loop 7
+2021-03-09 13:49:01,470 | ContentAnalyzer | INFO | Loop 8
+2021-03-09 13:49:06,477 | ContentAnalyzer | INFO | Loop 9
+2021-03-09 13:49:11,483 | ContentAnalyzer | INFO | Loop 10
+2021-03-09 13:49:16,490 | ContentAnalyzer | INFO | Loop 11
+2021-03-09 13:49:21,494 | ContentAnalyzer | INFO | Loop 12
+2021-03-09 13:49:26,498 | ContentAnalyzer | INFO | Loop 13
+2021-03-09 13:49:31,501 | ContentAnalyzer | INFO | Loop 14
+2021-03-09 13:49:36,504 | ContentAnalyzer | INFO | Loop 15
+2021-03-09 13:49:41,510 | ContentAnalyzer | INFO | Loop 16
+2021-03-09 13:49:46,517 | ContentAnalyzer | INFO | Loop 17
+2021-03-09 13:49:51,522 | ContentAnalyzer | INFO | Loop 18
+2021-03-09 13:49:56,527 | ContentAnalyzer | INFO | Loop 19
+2021-03-09 13:50:01,532 | ContentAnalyzer | INFO | Loop 20
+2021-03-09 13:50:06,538 | ContentAnalyzer | INFO | Loop 21
+2021-03-09 13:50:11,541 | ContentAnalyzer | INFO | Loop 22
+2021-03-09 13:50:16,546 | ContentAnalyzer | INFO | Loop 23
+2021-03-09 13:50:21,555 | ContentAnalyzer | INFO | Loop 24
+2021-03-09 13:50:26,562 | ContentAnalyzer | INFO | Loop 25
+2021-03-09 13:50:31,566 | ContentAnalyzer | INFO | Loop 26
+2021-03-09 13:50:36,572 | ContentAnalyzer | INFO | Loop 27
+2021-03-09 13:50:41,577 | ContentAnalyzer | INFO | Loop 28
+2021-03-09 13:50:46,580 | ContentAnalyzer | INFO | Loop 29
+2021-03-09 13:50:51,586 | ContentAnalyzer | INFO | Loop 30
+2021-03-09 13:50:56,593 | ContentAnalyzer | INFO | Loop 31
+2021-03-09 13:51:01,601 | ContentAnalyzer | INFO | Loop 32
+2021-03-09 13:51:06,607 | ContentAnalyzer | INFO | Loop 33
+2021-03-09 13:51:11,615 | ContentAnalyzer | INFO | Loop 34
+2021-03-09 13:51:16,619 | ContentAnalyzer | INFO | Loop 35
+2021-03-09 13:51:21,625 | ContentAnalyzer | INFO | Loop 36
+2021-03-09 13:51:26,632 | ContentAnalyzer | INFO | Loop 37
+2021-03-09 13:51:31,639 | ContentAnalyzer | INFO | Loop 38
+2021-03-09 13:51:36,645 | ContentAnalyzer | INFO | Loop 39
+2021-03-09 13:51:41,650 | ContentAnalyzer | INFO | Loop 40
+2021-03-09 13:51:46,656 | ContentAnalyzer | INFO | Loop 41
+2021-03-09 13:51:51,663 | ContentAnalyzer | INFO | Loop 42
+2021-03-09 13:51:56,667 | ContentAnalyzer | INFO | Loop 43
+2021-03-09 13:52:01,671 | ContentAnalyzer | INFO | Loop 44
+2021-03-09 13:52:06,676 | ContentAnalyzer | INFO | Loop 45
+2021-03-09 13:52:11,683 | ContentAnalyzer | INFO | Loop 46
+2021-03-09 13:52:16,685 | ContentAnalyzer | INFO | Loop 47
+2021-03-09 13:52:21,691 | ContentAnalyzer | INFO | Loop 48
+2021-03-09 13:52:26,696 | ContentAnalyzer | INFO | Loop 49
+2021-03-09 13:52:31,703 | ContentAnalyzer | INFO | Loop 50
+2021-03-09 13:52:36,710 | ContentAnalyzer | INFO | Loop 51
+2021-03-09 13:52:41,714 | ContentAnalyzer | INFO | Loop 52
+2021-03-09 13:52:46,720 | ContentAnalyzer | INFO | Loop 53
+2021-03-09 13:52:51,724 | ContentAnalyzer | INFO | Loop 54
+2021-03-09 13:53:46,233 | ContentAnalyzer | INFO | **************************************
+2021-03-09 13:53:46,234 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 13:53:46,234 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 13:53:46,680 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 13:53:46,681 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 13:53:51,708 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 13:54:27,085 | ContentAnalyzer | INFO | **************************************
+2021-03-09 13:54:27,086 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 13:54:27,086 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 13:54:27,346 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 13:54:27,347 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 13:54:32,352 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 13:54:37,357 | ContentAnalyzer | INFO | Loop 3
+2021-03-09 13:54:42,362 | ContentAnalyzer | INFO | Loop 4
+2021-03-09 13:54:47,367 | ContentAnalyzer | INFO | Loop 5
+2021-03-09 13:54:52,373 | ContentAnalyzer | INFO | Loop 6
+2021-03-09 13:54:57,375 | ContentAnalyzer | INFO | Loop 7
+2021-03-09 13:55:02,381 | ContentAnalyzer | INFO | Loop 8
+2021-03-09 13:55:07,383 | ContentAnalyzer | INFO | Loop 9
+2021-03-09 13:55:12,386 | ContentAnalyzer | INFO | Loop 10
+2021-03-09 13:55:17,391 | ContentAnalyzer | INFO | Loop 11
+2021-03-09 13:55:22,397 | ContentAnalyzer | INFO | Loop 12
+2021-03-09 13:55:27,404 | ContentAnalyzer | INFO | Loop 13
+2021-03-09 13:55:32,411 | ContentAnalyzer | INFO | Loop 14
+2021-03-09 13:55:37,414 | ContentAnalyzer | INFO | Loop 15
+2021-03-09 13:55:42,420 | ContentAnalyzer | INFO | Loop 16
+2021-03-09 13:55:47,428 | ContentAnalyzer | INFO | Loop 17
+2021-03-09 13:55:52,430 | ContentAnalyzer | INFO | Loop 18
+2021-03-09 13:55:57,438 | ContentAnalyzer | INFO | Loop 19
+2021-03-09 13:56:02,440 | ContentAnalyzer | INFO | Loop 20
+2021-03-09 13:56:07,444 | ContentAnalyzer | INFO | Loop 21
+2021-03-09 13:56:12,449 | ContentAnalyzer | INFO | Loop 22
+2021-03-09 13:56:17,451 | ContentAnalyzer | INFO | Loop 23
+2021-03-09 13:56:22,456 | ContentAnalyzer | INFO | Loop 24
+2021-03-09 13:56:27,459 | ContentAnalyzer | INFO | Loop 25
+2021-03-09 13:56:32,462 | ContentAnalyzer | INFO | Loop 26
+2021-03-09 13:56:37,469 | ContentAnalyzer | INFO | Loop 27
+2021-03-09 13:56:42,475 | ContentAnalyzer | INFO | Loop 28
+2021-03-09 13:56:47,482 | ContentAnalyzer | INFO | Loop 29
+2021-03-09 13:56:52,489 | ContentAnalyzer | INFO | Loop 30
+2021-03-09 13:56:57,497 | ContentAnalyzer | INFO | Loop 31
+2021-03-09 13:57:02,503 | ContentAnalyzer | INFO | Loop 32
+2021-03-09 13:57:07,510 | ContentAnalyzer | INFO | Loop 33
+2021-03-09 13:57:12,518 | ContentAnalyzer | INFO | Loop 34
+2021-03-09 13:57:17,526 | ContentAnalyzer | INFO | Loop 35
+2021-03-09 13:57:22,533 | ContentAnalyzer | INFO | Loop 36
+2021-03-09 13:57:26,920 | ContentAnalyzer | INFO | **************************************
+2021-03-09 13:57:26,921 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 13:57:26,921 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 13:57:27,196 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 13:57:27,197 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 13:57:27,197 | ContentAnalyzer | ERROR | No analyzerID available to download results. The file upload may have failed. File name: Police Report 6.pdf
+2021-03-09 13:57:27,198 | ContentAnalyzer | ERROR | No analyzerID available to download results. The file upload may have failed. File name: Invoice Page 1.pdf
+2021-03-09 13:57:27,199 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 13:57:27,199 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 13:58:34,421 | ContentAnalyzer | INFO | **************************************
+2021-03-09 13:58:34,422 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 13:58:34,422 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 13:58:34,705 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 13:58:34,705 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 13:58:34,706 | ContentAnalyzer | ERROR | No analyzerID available to download results. The file upload may have failed. File name: Police Report 6.pdf
+2021-03-09 13:58:34,706 | ContentAnalyzer | ERROR | 'download_completed'
+2021-03-09 13:58:34,710 | ContentAnalyzer | ERROR | No analyzerID available to download results. The file upload may have failed. File name: Invoice Page 1.pdf
+2021-03-09 13:58:34,710 | ContentAnalyzer | ERROR | 'download_completed'
+2021-03-09 13:58:34,712 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 13:58:34,712 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:00:30,565 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:00:30,566 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:00:30,566 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:00:31,059 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:00:31,060 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:00:31,063 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:00:31,063 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:01:11,218 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:01:11,218 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:01:11,218 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:01:11,489 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:01:11,490 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:01:11,490 | ContentAnalyzer | INFO | Checking status of analyzerId: ce1291d0-8112-11eb-a5f0-adf91eac12ae
+2021-03-09 14:01:12,011 | ContentAnalyzer | ERROR | An error occurred while trying to get file status.
+2021-03-09 14:01:12,013 | ContentAnalyzer | INFO | Checking status of analyzerId: d253e500-8112-11eb-a591-cdefc0869c92
+2021-03-09 14:01:12,267 | ContentAnalyzer | ERROR | An error occurred while trying to get file status.
+2021-03-09 14:01:12,268 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:01:12,268 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:05:03,706 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:05:03,707 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:05:03,707 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:05:04,034 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:05:43,573 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:05:43,573 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:05:43,573 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:05:44,897 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:05:44,898 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:05:44,899 | ContentAnalyzer | INFO | Checking status of analyzerId: ce1291d0-8112-11eb-a5f0-adf91eac12ae
+2021-03-09 14:05:45,147 | ContentAnalyzer | ERROR | An error occurred while trying to get file status.
+2021-03-09 14:05:45,148 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:05:45,149 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:07:19,990 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:07:19,991 | ContentAnalyzer | INFO | API Sample tool readConfigJSON starting...
+2021-03-09 14:07:19,991 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:09:52,571 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:09:52,572 | ContentAnalyzer | INFO | API Sample tool readConfigJSON starting...
+2021-03-09 14:09:52,573 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:11:46,497 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:11:46,498 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:11:46,498 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:11:47,020 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:11:47,021 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:11:47,021 | ContentAnalyzer | INFO | Checking status of analyzerId: ce1291d0-8112-11eb-a5f0-adf91eac12ae
+2021-03-09 14:11:47,520 | ContentAnalyzer | ERROR | An error occurred while trying to get file status.
+2021-03-09 14:11:47,521 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:11:47,521 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:13:03,420 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:13:03,421 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:13:03,421 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:13:03,988 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:13:03,989 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:13:03,989 | ContentAnalyzer | INFO | Checking status of analyzerId: ce1291d0-8112-11eb-a5f0-adf91eac12ae
+2021-03-09 14:13:04,271 | ContentAnalyzer | ERROR | An error occurred while trying to get file status.
+2021-03-09 14:13:04,273 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:13:04,274 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:18:04,459 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:18:04,460 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:18:04,460 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:18:04,894 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:18:04,895 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:18:04,895 | ContentAnalyzer | INFO | Checking status of analyzerId: ce1291d0-8112-11eb-a5f0-adf91eac12ae
+2021-03-09 14:18:11,419 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: ce1291d0-8112-11eb-a5f0-adf91eac12ae
+2021-03-09 14:18:11,727 | ContentAnalyzer | ERROR | An error occurred while trying to get file status.
+2021-03-09 14:18:11,730 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:18:11,731 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:20:39,727 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:20:39,728 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:20:39,728 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:20:40,071 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:20:40,073 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:20:45,077 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 14:20:45,080 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:20:45,080 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:22:19,076 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:22:19,077 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:22:19,077 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:22:19,430 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:22:19,431 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:22:24,435 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 14:22:24,438 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:22:24,438 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:24:22,032 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:24:22,033 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:24:22,033 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:24:22,453 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:24:22,454 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:24:27,464 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 14:24:27,466 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:24:27,467 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:25:53,805 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:25:53,806 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:25:53,806 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:25:54,242 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:25:54,243 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:25:59,251 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 14:25:59,253 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:25:59,253 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:28:16,632 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:28:16,633 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:28:16,633 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:28:16,948 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:28:16,949 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:28:21,957 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 14:28:21,959 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:28:21,959 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:29:15,500 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:29:15,501 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:29:15,501 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:29:15,816 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:29:15,817 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:29:15,817 | ContentAnalyzer | INFO | Checking status of analyzerId: ce1291d0-8112-11eb-a5f0-adf91eac12ae
+2021-03-09 14:29:21,374 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: ce1291d0-8112-11eb-a5f0-adf91eac12ae
+2021-03-09 14:29:26,427 | ContentAnalyzer | INFO | Created new output directory, /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/output/input/json
+2021-03-09 14:29:26,442 | ContentAnalyzer | ERROR | An error occurred when trying to get file
+2021-03-09 14:29:26,442 | ContentAnalyzer | DEBUG | 'data'
+Traceback (most recent call last):
+  File "downloadFiles.py", line 92, in downloadFile
+    json.dump(response_output["data"], open(filename_output_path, "w"), indent=4)
+KeyError: 'data'
+2021-03-09 14:29:26,444 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:29:26,444 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:30:23,997 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:30:23,998 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:30:23,999 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:30:24,290 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:30:24,291 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:30:29,296 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 14:30:29,298 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:30:29,298 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:30:40,077 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:30:40,077 | ContentAnalyzer | INFO | API Sample tool downloadFiles starting...
+2021-03-09 14:30:40,077 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:30:40,546 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:30:40,547 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:30:40,547 | ContentAnalyzer | INFO | Checking status of analyzerId: ce1291d0-8112-11eb-a5f0-adf91eac12ae
+2021-03-09 14:30:44,808 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: ce1291d0-8112-11eb-a5f0-adf91eac12ae
+2021-03-09 14:30:49,207 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:30:49,207 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:36:04,663 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:36:04,664 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 14:36:04,664 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:36:05,566 | ContentAnalyzer | INFO | Successfully got the token WcqGX6zbMrGxUigRIpxylg0a52MJrTJIeN1PDVu1
+2021-03-09 14:36:05,567 | ContentAnalyzer | INFO | Successfully generate ums token WcqGX6zbMrGxUigRIpxylg0a52MJrTJIeN1PDVu1, continue
+2021-03-09 14:36:05,567 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 14:36:05,967 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:36:05,968 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 14:36:13,697 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 14:36:19,971 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 14:36:19,971 | ContentAnalyzer | INFO | Done uploading 2 files
+2021-03-09 14:36:19,971 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 14:36:20,325 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:36:20,326 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:36:20,327 | ContentAnalyzer | INFO | Checking status of analyzerId: d8d66910-8127-11eb-a591-cdefc0869c92
+2021-03-09 14:36:23,723 | ContentAnalyzer | INFO | Checking status of analyzerId: dcab65e0-8127-11eb-a5f0-adf91eac12ae
+2021-03-09 14:36:32,019 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 14:36:32,020 | ContentAnalyzer | INFO | Checking status of analyzerId: d8d66910-8127-11eb-a591-cdefc0869c92
+2021-03-09 14:36:35,610 | ContentAnalyzer | INFO | Checking status of analyzerId: dcab65e0-8127-11eb-a5f0-adf91eac12ae
+2021-03-09 14:36:44,837 | ContentAnalyzer | INFO | Loop 3
+2021-03-09 14:36:44,837 | ContentAnalyzer | INFO | Checking status of analyzerId: d8d66910-8127-11eb-a591-cdefc0869c92
+2021-03-09 14:36:49,118 | ContentAnalyzer | INFO | Checking status of analyzerId: dcab65e0-8127-11eb-a5f0-adf91eac12ae
+2021-03-09 14:36:58,466 | ContentAnalyzer | INFO | Loop 4
+2021-03-09 14:36:58,466 | ContentAnalyzer | INFO | Checking status of analyzerId: d8d66910-8127-11eb-a591-cdefc0869c92
+2021-03-09 14:37:02,842 | ContentAnalyzer | INFO | Checking status of analyzerId: dcab65e0-8127-11eb-a5f0-adf91eac12ae
+2021-03-09 14:37:12,046 | ContentAnalyzer | INFO | Loop 5
+2021-03-09 14:37:12,047 | ContentAnalyzer | INFO | Checking status of analyzerId: d8d66910-8127-11eb-a591-cdefc0869c92
+2021-03-09 14:37:16,461 | ContentAnalyzer | INFO | Checking status of analyzerId: dcab65e0-8127-11eb-a5f0-adf91eac12ae
+2021-03-09 14:37:20,597 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: dcab65e0-8127-11eb-a5f0-adf91eac12ae
+2021-03-09 14:37:30,315 | ContentAnalyzer | INFO | Loop 6
+2021-03-09 14:37:30,316 | ContentAnalyzer | INFO | Checking status of analyzerId: d8d66910-8127-11eb-a591-cdefc0869c92
+2021-03-09 14:37:38,611 | ContentAnalyzer | INFO | Loop 7
+2021-03-09 14:37:38,612 | ContentAnalyzer | INFO | Checking status of analyzerId: d8d66910-8127-11eb-a591-cdefc0869c92
+2021-03-09 14:37:46,904 | ContentAnalyzer | INFO | Loop 8
+2021-03-09 14:37:46,905 | ContentAnalyzer | INFO | Checking status of analyzerId: d8d66910-8127-11eb-a591-cdefc0869c92
+2021-03-09 14:37:50,258 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: d8d66910-8127-11eb-a591-cdefc0869c92
+2021-03-09 14:37:54,559 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:37:54,560 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:37:54,560 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 14:37:55,229 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:37:55,231 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 14:37:55,231 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 14:37:55,232 | ContentAnalyzer | INFO | Updating report
+2021-03-09 14:37:55,233 | ContentAnalyzer | INFO | Done updating report in the current directory, output.json
+2021-03-09 14:37:55,233 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 110 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 14:43:20,299 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:43:20,299 | ContentAnalyzer | INFO | API Sample tool reupload starting...
+2021-03-09 14:43:20,299 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:43:58,862 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:43:58,862 | ContentAnalyzer | INFO | API Sample tool reupload starting...
+2021-03-09 14:43:58,862 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:43:59,621 | ContentAnalyzer | INFO | Successfully got the token DBZd15qlY73fMtWZJUVH5bgrDvgQhkhLCCMCu2mP
+2021-03-09 14:43:59,621 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 14:44:00,060 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:44:00,061 | ContentAnalyzer | INFO | There are no unfinished files to process. Call uploadFiles.py for new processing.
+2021-03-09 14:44:00,061 | ContentAnalyzer | INFO | API Sample tool reupload ended. Processing time took 1 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with BACA's actual processing time.
+2021-03-09 14:45:59,240 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:45:59,240 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 14:45:59,241 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:46:00,487 | ContentAnalyzer | INFO | Successfully got the token vSEjenWkI1Iy5Cf3uJrwXqKKVoNwVaQC1sHOfKCb
+2021-03-09 14:46:00,487 | ContentAnalyzer | INFO | Successfully generate ums token vSEjenWkI1Iy5Cf3uJrwXqKKVoNwVaQC1sHOfKCb, continue
+2021-03-09 14:46:00,487 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 14:46:00,899 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:46:00,901 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 14:46:09,562 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 14:46:16,218 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 14:46:16,219 | ContentAnalyzer | INFO | Done uploading 2 files
+2021-03-09 14:46:16,219 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 14:46:16,551 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:46:16,552 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:46:16,552 | ContentAnalyzer | INFO | Checking status of analyzerId: 3c06c150-8129-11eb-a5f0-adf91eac12ae
+2021-03-09 14:46:19,841 | ContentAnalyzer | INFO | Checking status of analyzerId: 3fd97430-8129-11eb-a591-cdefc0869c92
+2021-03-09 14:46:28,280 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 14:46:28,282 | ContentAnalyzer | INFO | Checking status of analyzerId: 3c06c150-8129-11eb-a5f0-adf91eac12ae
+2021-03-09 14:46:32,811 | ContentAnalyzer | INFO | Checking status of analyzerId: 3fd97430-8129-11eb-a591-cdefc0869c92
+2021-03-09 14:46:41,185 | ContentAnalyzer | INFO | Loop 3
+2021-03-09 14:46:41,185 | ContentAnalyzer | INFO | Checking status of analyzerId: 3c06c150-8129-11eb-a5f0-adf91eac12ae
+2021-03-09 14:46:44,484 | ContentAnalyzer | INFO | Checking status of analyzerId: 3fd97430-8129-11eb-a591-cdefc0869c92
+2021-03-09 14:46:52,762 | ContentAnalyzer | INFO | Loop 4
+2021-03-09 14:46:52,762 | ContentAnalyzer | INFO | Checking status of analyzerId: 3c06c150-8129-11eb-a5f0-adf91eac12ae
+2021-03-09 14:46:56,077 | ContentAnalyzer | INFO | Checking status of analyzerId: 3fd97430-8129-11eb-a591-cdefc0869c92
+2021-03-09 14:46:59,399 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 3fd97430-8129-11eb-a591-cdefc0869c92
+2021-03-09 14:47:09,154 | ContentAnalyzer | INFO | Loop 5
+2021-03-09 14:47:09,154 | ContentAnalyzer | INFO | Checking status of analyzerId: 3c06c150-8129-11eb-a5f0-adf91eac12ae
+2021-03-09 14:47:17,423 | ContentAnalyzer | INFO | Loop 6
+2021-03-09 14:47:17,424 | ContentAnalyzer | INFO | Checking status of analyzerId: 3c06c150-8129-11eb-a5f0-adf91eac12ae
+2021-03-09 14:47:20,845 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 3c06c150-8129-11eb-a5f0-adf91eac12ae
+2021-03-09 14:47:28,118 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:47:28,118 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:47:28,118 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 14:47:28,874 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:47:28,876 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 14:47:28,877 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 14:47:28,877 | ContentAnalyzer | INFO | Updating report
+2021-03-09 14:47:28,878 | ContentAnalyzer | INFO | Done updating report in the current directory, output.json
+2021-03-09 14:47:28,878 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 89 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 14:47:37,055 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:47:37,055 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 14:47:37,055 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:47:38,687 | ContentAnalyzer | INFO | Successfully got the token dSczs7KC4MtJFli1e79FJxpshgKGZiP6hZqnE09Z
+2021-03-09 14:47:38,687 | ContentAnalyzer | INFO | Successfully generate ums token dSczs7KC4MtJFli1e79FJxpshgKGZiP6hZqnE09Z, continue
+2021-03-09 14:47:38,687 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 14:47:40,294 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:47:40,297 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 14:47:46,987 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 14:47:53,175 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 14:47:53,175 | ContentAnalyzer | INFO | Done uploading 2 files
+2021-03-09 14:47:53,175 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 14:47:53,682 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:47:53,683 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 14:47:53,683 | ContentAnalyzer | INFO | Checking status of analyzerId: 760eb650-8129-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 14:47:56,956 | ContentAnalyzer | INFO | Checking status of analyzerId: 79e3da30-8129-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 14:48:05,357 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 14:48:05,359 | ContentAnalyzer | INFO | Checking status of analyzerId: 760eb650-8129-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 14:48:08,799 | ContentAnalyzer | INFO | Checking status of analyzerId: 79e3da30-8129-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 14:48:17,195 | ContentAnalyzer | INFO | Loop 3
+2021-03-09 14:48:17,195 | ContentAnalyzer | INFO | Checking status of analyzerId: 760eb650-8129-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 14:48:21,537 | ContentAnalyzer | INFO | Checking status of analyzerId: 79e3da30-8129-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 14:48:30,795 | ContentAnalyzer | INFO | Loop 4
+2021-03-09 14:48:30,797 | ContentAnalyzer | INFO | Checking status of analyzerId: 760eb650-8129-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 14:48:35,262 | ContentAnalyzer | INFO | Checking status of analyzerId: 79e3da30-8129-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 14:48:45,075 | ContentAnalyzer | INFO | Loop 5
+2021-03-09 14:48:45,075 | ContentAnalyzer | INFO | Checking status of analyzerId: 760eb650-8129-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 14:48:49,488 | ContentAnalyzer | INFO | Checking status of analyzerId: 79e3da30-8129-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 14:48:58,850 | ContentAnalyzer | INFO | Loop 6
+2021-03-09 14:48:58,850 | ContentAnalyzer | INFO | Checking status of analyzerId: 760eb650-8129-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 14:49:03,254 | ContentAnalyzer | INFO | Checking status of analyzerId: 79e3da30-8129-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 14:49:12,613 | ContentAnalyzer | INFO | Loop 7
+2021-03-09 14:49:12,614 | ContentAnalyzer | INFO | Checking status of analyzerId: 760eb650-8129-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 14:49:17,122 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 760eb650-8129-11eb-a5f0-adf91eac12ae
+2021-03-09 14:49:22,928 | ContentAnalyzer | INFO | Checking status of analyzerId: 79e3da30-8129-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 14:49:27,270 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 79e3da30-8129-11eb-a591-cdefc0869c92
+2021-03-09 14:49:32,213 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 14:49:32,213 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 14:49:32,214 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 14:49:32,605 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 14:49:32,607 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 14:49:32,607 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 14:49:32,607 | ContentAnalyzer | INFO | Updating report
+2021-03-09 14:49:32,608 | ContentAnalyzer | INFO | Done updating report in the current directory, output.json
+2021-03-09 14:49:32,608 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 115 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 14:51:52,339 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:51:52,340 | ContentAnalyzer | INFO | API Sample tool deleteFiles starting...
+2021-03-09 14:51:52,340 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:51:53,131 | ContentAnalyzer | INFO | ums token provided is invalid or expired, trying to generate a new one
+2021-03-09 14:51:53,674 | ContentAnalyzer | INFO | Successfully got the token GgiOn4O4uM1Sve88vetrRpXQiWrnLbdRd3fWbEGV
+2021-03-09 14:51:53,678 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 14:51:53,679 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 14:58:54,548 | ContentAnalyzer | INFO | **************************************
+2021-03-09 14:58:54,548 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 14:58:54,548 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 14:58:55,668 | ContentAnalyzer | INFO | Successfully got the token VMsZdNwD898JII6R4t6gUtd4U9anI19nI1oqvdb5
+2021-03-09 14:58:55,668 | ContentAnalyzer | ERROR | Failed to generate a token due to exception
+2021-03-09 14:58:55,668 | ContentAnalyzer | DEBUG | global name 'output_json' is not defined
+2021-03-09 14:58:55,668 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 15:00:07,476 | ContentAnalyzer | INFO | **************************************
+2021-03-09 15:00:07,476 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 15:00:07,476 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 15:00:08,362 | ContentAnalyzer | INFO | Successfully got the token sUi8Fub9xNNLR6K3T1z6wAYnsUJgYzee5bRvPT6o
+2021-03-09 15:00:08,364 | ContentAnalyzer | INFO | Successfully generate ums token sUi8Fub9xNNLR6K3T1z6wAYnsUJgYzee5bRvPT6o, continue
+2021-03-09 15:00:08,364 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 15:00:08,751 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:00:08,753 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 15:00:17,924 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 15:00:24,897 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 15:00:24,897 | ContentAnalyzer | INFO | Done uploading 2 files
+2021-03-09 15:00:24,897 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 15:00:25,275 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:00:25,275 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 15:00:25,276 | ContentAnalyzer | INFO | Checking status of analyzerId: 35bc6cd0-812b-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:00:28,809 | ContentAnalyzer | INFO | Checking status of analyzerId: 39cc4fc0-812b-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 15:00:37,099 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 15:00:37,099 | ContentAnalyzer | INFO | Checking status of analyzerId: 35bc6cd0-812b-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:00:40,450 | ContentAnalyzer | INFO | Checking status of analyzerId: 39cc4fc0-812b-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 15:00:49,891 | ContentAnalyzer | INFO | Loop 3
+2021-03-09 15:00:49,891 | ContentAnalyzer | INFO | Checking status of analyzerId: 35bc6cd0-812b-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:00:53,137 | ContentAnalyzer | INFO | Checking status of analyzerId: 39cc4fc0-812b-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 15:01:01,840 | ContentAnalyzer | INFO | Loop 4
+2021-03-09 15:01:01,841 | ContentAnalyzer | INFO | Checking status of analyzerId: 35bc6cd0-812b-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:01:05,461 | ContentAnalyzer | INFO | Checking status of analyzerId: 39cc4fc0-812b-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 15:01:08,920 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 39cc4fc0-812b-11eb-a591-cdefc0869c92
+2021-03-09 15:01:17,911 | ContentAnalyzer | INFO | Loop 5
+2021-03-09 15:01:17,911 | ContentAnalyzer | INFO | Checking status of analyzerId: 35bc6cd0-812b-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:01:26,388 | ContentAnalyzer | INFO | Loop 6
+2021-03-09 15:01:26,389 | ContentAnalyzer | INFO | Checking status of analyzerId: 35bc6cd0-812b-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:01:30,033 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 35bc6cd0-812b-11eb-a5f0-adf91eac12ae
+2021-03-09 15:01:34,783 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 15:01:34,783 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 15:01:34,783 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 15:01:35,175 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:01:35,179 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 15:01:35,179 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 15:01:35,179 | ContentAnalyzer | INFO | Updating report
+2021-03-09 15:01:35,181 | ContentAnalyzer | INFO | Done updating report in the current directory, output.json
+2021-03-09 15:01:35,181 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 87 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 15:06:06,298 | ContentAnalyzer | INFO | **************************************
+2021-03-09 15:06:06,298 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 15:06:06,298 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 15:06:08,533 | ContentAnalyzer | INFO | Successfully got the token gUpTobygNBpHtllVmt1atLUHkLVOLdD8sRjKT1XQ
+2021-03-09 15:06:08,533 | ContentAnalyzer | INFO | Successfully generate ums token gUpTobygNBpHtllVmt1atLUHkLVOLdD8sRjKT1XQ, continue
+2021-03-09 15:06:08,533 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 15:06:09,169 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:06:09,171 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 15:06:17,698 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 15:06:23,943 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 15:06:23,944 | ContentAnalyzer | INFO | Done uploading 2 files
+2021-03-09 15:06:23,944 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 15:06:24,303 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:06:24,304 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 15:06:24,304 | ContentAnalyzer | INFO | Checking status of analyzerId: 0c1af710-812c-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:06:27,438 | ContentAnalyzer | INFO | Checking status of analyzerId: 10068920-812c-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 15:06:36,299 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 15:06:36,300 | ContentAnalyzer | INFO | Checking status of analyzerId: 0c1af710-812c-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:06:39,578 | ContentAnalyzer | INFO | Checking status of analyzerId: 10068920-812c-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 15:06:47,797 | ContentAnalyzer | INFO | Loop 3
+2021-03-09 15:06:47,798 | ContentAnalyzer | INFO | Checking status of analyzerId: 0c1af710-812c-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:06:51,051 | ContentAnalyzer | INFO | Checking status of analyzerId: 10068920-812c-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 15:06:59,444 | ContentAnalyzer | INFO | Loop 4
+2021-03-09 15:06:59,445 | ContentAnalyzer | INFO | Checking status of analyzerId: 0c1af710-812c-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:07:03,448 | ContentAnalyzer | INFO | Checking status of analyzerId: 10068920-812c-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 15:07:11,830 | ContentAnalyzer | INFO | Loop 5
+2021-03-09 15:07:11,831 | ContentAnalyzer | INFO | Checking status of analyzerId: 0c1af710-812c-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:07:15,486 | ContentAnalyzer | INFO | Checking status of analyzerId: 10068920-812c-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 15:07:18,682 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 10068920-812c-11eb-a591-cdefc0869c92
+2021-03-09 15:07:27,912 | ContentAnalyzer | INFO | Loop 6
+2021-03-09 15:07:27,912 | ContentAnalyzer | INFO | Checking status of analyzerId: 0c1af710-812c-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 15:07:31,129 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 0c1af710-812c-11eb-a5f0-adf91eac12ae
+2021-03-09 15:07:37,937 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 15:07:37,938 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 15:07:37,938 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 15:07:38,305 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:07:38,306 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 15:07:38,307 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 15:07:38,307 | ContentAnalyzer | INFO | Updating report
+2021-03-09 15:07:38,307 | ContentAnalyzer | INFO | Done updating report in the current directory, output.json
+2021-03-09 15:07:38,308 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 92 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 15:08:38,501 | ContentAnalyzer | INFO | **************************************
+2021-03-09 15:08:38,501 | ContentAnalyzer | INFO | API Sample tool deleteFiles starting...
+2021-03-09 15:08:38,501 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 15:08:38,972 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:08:38,980 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 15:08:38,980 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 15:12:05,205 | ContentAnalyzer | INFO | **************************************
+2021-03-09 15:12:05,206 | ContentAnalyzer | INFO | API Sample tool deleteFiles starting...
+2021-03-09 15:12:05,206 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 15:12:05,582 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:12:05,585 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 15:12:05,586 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 15:15:26,080 | ContentAnalyzer | INFO | **************************************
+2021-03-09 15:15:26,080 | ContentAnalyzer | INFO | API Sample tool deleteFiles starting...
+2021-03-09 15:15:26,080 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 15:15:26,657 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:15:26,658 | ContentAnalyzer | ERROR | No analyzerID available to delete results. The file upload may have failed. File name: Police Report 6.pdf
+2021-03-09 15:15:26,663 | ContentAnalyzer | ERROR | No analyzerID available to delete results. The file upload may have failed. File name: Invoice Page 1.pdf
+2021-03-09 15:15:26,664 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 15:15:26,664 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 15:15:51,829 | ContentAnalyzer | INFO | **************************************
+2021-03-09 15:15:51,829 | ContentAnalyzer | INFO | API Sample tool deleteFiles starting...
+2021-03-09 15:15:51,829 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 15:15:52,758 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:15:52,759 | ContentAnalyzer | ERROR | No analyzerID available to delete results. The file upload may have failed. File name: Police Report 6.pdf
+2021-03-09 15:15:52,759 | ContentAnalyzer | ERROR | No analyzerID available to delete results. The file upload may have failed. File name: Invoice Page 1.pdf
+2021-03-09 15:15:52,760 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 15:15:52,760 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 15:16:11,995 | ContentAnalyzer | INFO | **************************************
+2021-03-09 15:16:11,995 | ContentAnalyzer | INFO | API Sample tool deleteFiles starting...
+2021-03-09 15:16:11,995 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 15:16:13,424 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:16:22,501 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 15:16:22,501 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 15:23:19,115 | ContentAnalyzer | INFO | **************************************
+2021-03-09 15:23:19,116 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 15:23:19,116 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 15:23:20,309 | ContentAnalyzer | INFO | Successfully got the token I8uy843DtsEv6wQzHWwpM5C2tfcMYYA5g44Lm9ab
+2021-03-09 15:23:20,313 | ContentAnalyzer | INFO | Successfully generate ums token I8uy843DtsEv6wQzHWwpM5C2tfcMYYA5g44Lm9ab, continue
+2021-03-09 15:23:20,314 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 15:23:20,763 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:23:20,764 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 15:23:28,799 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 15:23:36,458 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 15:23:36,458 | ContentAnalyzer | INFO | Done uploading 2 files
+2021-03-09 15:23:36,458 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 15:23:36,947 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:23:36,947 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 15:23:36,948 | ContentAnalyzer | INFO | Checking status of analyzerId: 72726370-812e-11eb-a591-cdefc0869c92, filename: Police Report 6.pdf
+2021-03-09 15:23:41,566 | ContentAnalyzer | INFO | Checking status of analyzerId: 7753a020-812e-11eb-a5f0-adf91eac12ae, filename: Invoice Page 1.pdf
+2021-03-09 15:23:51,020 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 15:23:51,020 | ContentAnalyzer | INFO | Checking status of analyzerId: 72726370-812e-11eb-a591-cdefc0869c92, filename: Police Report 6.pdf
+2021-03-09 15:23:55,928 | ContentAnalyzer | INFO | Checking status of analyzerId: 7753a020-812e-11eb-a5f0-adf91eac12ae, filename: Invoice Page 1.pdf
+2021-03-09 15:24:05,398 | ContentAnalyzer | INFO | Loop 3
+2021-03-09 15:24:05,398 | ContentAnalyzer | INFO | Checking status of analyzerId: 72726370-812e-11eb-a591-cdefc0869c92, filename: Police Report 6.pdf
+2021-03-09 15:24:09,935 | ContentAnalyzer | INFO | Checking status of analyzerId: 7753a020-812e-11eb-a5f0-adf91eac12ae, filename: Invoice Page 1.pdf
+2021-03-09 15:24:18,224 | ContentAnalyzer | INFO | Loop 4
+2021-03-09 15:24:18,225 | ContentAnalyzer | INFO | Checking status of analyzerId: 72726370-812e-11eb-a591-cdefc0869c92, filename: Police Report 6.pdf
+2021-03-09 15:24:21,550 | ContentAnalyzer | INFO | Checking status of analyzerId: 7753a020-812e-11eb-a5f0-adf91eac12ae, filename: Invoice Page 1.pdf
+2021-03-09 15:24:24,759 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 7753a020-812e-11eb-a5f0-adf91eac12ae
+2021-03-09 15:24:49,494 | ContentAnalyzer | INFO | Loop 5
+2021-03-09 15:24:49,496 | ContentAnalyzer | INFO | Checking status of analyzerId: 72726370-812e-11eb-a591-cdefc0869c92, filename: Police Report 6.pdf
+2021-03-09 15:25:02,952 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 72726370-812e-11eb-a591-cdefc0869c92
+2021-03-09 15:25:08,987 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 15:25:08,988 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 15:25:08,988 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 15:25:09,406 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 15:25:15,923 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 15:25:15,924 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 15:25:15,924 | ContentAnalyzer | INFO | Updating report
+2021-03-09 15:25:15,925 | ContentAnalyzer | INFO | Done updating report in the current directory, output.json
+2021-03-09 15:25:15,925 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 116 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 16:18:21,026 | ContentAnalyzer | INFO | **************************************
+2021-03-09 16:18:21,026 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 16:18:21,026 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 16:18:22,155 | ContentAnalyzer | INFO | Successfully got the token 3eKu0HVCE3ofu0YlTx9dyJ8vMrCP5iVZNpoxWqMF
+2021-03-09 16:18:22,157 | ContentAnalyzer | INFO | Successfully generate ums token 3eKu0HVCE3ofu0YlTx9dyJ8vMrCP5iVZNpoxWqMF, continue
+2021-03-09 16:18:22,157 | ContentAnalyzer | INFO | Uploading files
+2021-03-09 16:18:22,490 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 16:18:22,492 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Police Report 6.pdf 
+2021-03-09 16:18:29,274 | ContentAnalyzer | INFO | Uploading /Users/xiaoying.gao@ibm.com/Desktop/SmartPages/code_local/testing/input/Invoice Page 1.pdf 
+2021-03-09 16:18:35,622 | ContentAnalyzer | INFO | Upload status reported in output.json
+2021-03-09 16:18:35,622 | ContentAnalyzer | INFO | Done uploading 2 files
+2021-03-09 16:18:35,622 | ContentAnalyzer | INFO | Ready to download output files...
+2021-03-09 16:18:35,963 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 16:18:35,963 | ContentAnalyzer | INFO | Loop 1
+2021-03-09 16:18:35,963 | ContentAnalyzer | INFO | Checking status of analyzerId: 21e3b3c0-8136-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 16:18:38,686 | ContentAnalyzer | INFO | Checking status of analyzerId: 25d957f0-8136-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 16:18:46,966 | ContentAnalyzer | INFO | Loop 2
+2021-03-09 16:18:46,966 | ContentAnalyzer | INFO | Checking status of analyzerId: 21e3b3c0-8136-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 16:18:51,980 | ContentAnalyzer | INFO | Checking status of analyzerId: 25d957f0-8136-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 16:19:00,317 | ContentAnalyzer | INFO | Loop 3
+2021-03-09 16:19:00,318 | ContentAnalyzer | INFO | Checking status of analyzerId: 21e3b3c0-8136-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 16:19:03,527 | ContentAnalyzer | INFO | Checking status of analyzerId: 25d957f0-8136-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 16:19:11,649 | ContentAnalyzer | INFO | Loop 4
+2021-03-09 16:19:11,649 | ContentAnalyzer | INFO | Checking status of analyzerId: 21e3b3c0-8136-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 16:19:14,944 | ContentAnalyzer | INFO | Checking status of analyzerId: 25d957f0-8136-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 16:19:23,235 | ContentAnalyzer | INFO | Loop 5
+2021-03-09 16:19:23,236 | ContentAnalyzer | INFO | Checking status of analyzerId: 21e3b3c0-8136-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 16:19:26,084 | ContentAnalyzer | INFO | Checking status of analyzerId: 25d957f0-8136-11eb-a591-cdefc0869c92, filename: Invoice Page 1.pdf
+2021-03-09 16:19:29,489 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 25d957f0-8136-11eb-a591-cdefc0869c92
+2021-03-09 16:19:38,100 | ContentAnalyzer | INFO | Loop 6
+2021-03-09 16:19:38,100 | ContentAnalyzer | INFO | Checking status of analyzerId: 21e3b3c0-8136-11eb-a5f0-adf91eac12ae, filename: Police Report 6.pdf
+2021-03-09 16:19:42,487 | ContentAnalyzer | INFO | Downloading JSON of analyzerId: 21e3b3c0-8136-11eb-a5f0-adf91eac12ae
+2021-03-09 16:19:46,754 | ContentAnalyzer | INFO | Done downloading all output files to your output_directory_path
+2021-03-09 16:19:46,754 | ContentAnalyzer | INFO | Download status reported in output.json
+2021-03-09 16:19:46,754 | ContentAnalyzer | INFO | Deleting files on the server
+2021-03-09 16:19:47,110 | ContentAnalyzer | INFO | ums token provided is valid
+2021-03-09 16:19:53,595 | ContentAnalyzer | INFO | Done deleting files on the server
+2021-03-09 16:19:53,595 | ContentAnalyzer | INFO | Delete status reported in output.json
+2021-03-09 16:19:53,595 | ContentAnalyzer | INFO | Updating report
+2021-03-09 16:19:53,596 | ContentAnalyzer | INFO | Done updating report in the current directory, output.json
+2021-03-09 16:19:53,596 | ContentAnalyzer | INFO | ADP API Sample tool ended. Processing time took 92 seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with actual processing time.
+2021-03-09 16:22:16,779 | ContentAnalyzer | INFO | **************************************
+2021-03-09 16:22:16,779 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 16:22:16,779 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 16:22:16,780 | ContentAnalyzer | ERROR | Missing value for key ums_base_url
+2021-03-09 16:22:16,780 | ContentAnalyzer | ERROR | Missing value for key ums_username
+2021-03-09 16:22:16,780 | ContentAnalyzer | ERROR | Missing value for key ums_password
+2021-03-09 16:22:16,780 | ContentAnalyzer | ERROR | Missing value for key aca_base_url
+2021-03-09 16:22:16,780 | ContentAnalyzer | ERROR | Missing value for key adp_project_id
+2021-03-09 16:22:16,783 | ContentAnalyzer | ERROR | Failed to check the client due to exception
+2021-03-09 16:22:16,783 | ContentAnalyzer | DEBUG | Invalid URL '/oidc/endpoint/ums/registration/ADP_PYTHON_CLIENT': No schema supplied. Perhaps you meant http:///oidc/endpoint/ums/registration/ADP_PYTHON_CLIENT?
+2021-03-09 16:22:16,783 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
+2021-03-09 16:26:46,522 | ContentAnalyzer | INFO | **************************************
+2021-03-09 16:26:46,523 | ContentAnalyzer | INFO | ADP API Sample tool starting...
+2021-03-09 16:26:46,523 | ContentAnalyzer | INFO | Logs can be found in the current directory, processing.log
+2021-03-09 16:26:46,523 | ContentAnalyzer | ERROR | Cannot find directory_path /sample/input.
+2021-03-09 16:26:46,523 | ContentAnalyzer | ERROR | Check your configuration file (config.json) for correct format and valid parameters
+2021-03-09 16:26:46,523 | ContentAnalyzer | ERROR | Failed to generate ums token to continue
