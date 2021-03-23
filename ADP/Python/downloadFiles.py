@@ -25,7 +25,7 @@ import time, copy
 from ssl import SSLError
 from base64 import b64encode
 from checkToken import checkTokenValid
-from checkToken import generateToken
+from checkToken import generateToken_pw_flow
 import datetime as dt
 
 '''
@@ -71,6 +71,7 @@ def downloadFile(configuration_settings, token, analyzerId, output, output_path,
     get_url = configuration_settings['aca_main_url'] + extra_path
     try:
         response = requests.request("GET", get_url, headers=headers, verify=configuration_settings['ssl_verification'])
+        # print(response.text)
         if response.status_code >= 400:
             logger.error("An error occurred while trying to download output.")
             return False, response.text
@@ -134,6 +135,7 @@ def downloadFiles(token):
                     output_json = json.load(open(output_json_path, "r"))
                     loop += 1
                     logger.info("Loop " + str(loop))
+                    # print(output_json)
                     if("output_results" in output_json and len(output_json["output_results"]) > 0):
                         output_json_result = output_json["output_results"]
                         new_output_json_result = []
@@ -155,6 +157,7 @@ def downloadFiles(token):
                                             completed = checkCompleted(latest_output_outputs, result)
                                             if(completed):
                                                 result["download_completed"] = True
+
                                             else:
                                                 current_time = dt.datetime.now()
                                                 seconds = (current_time - generated_time).total_seconds()
@@ -173,6 +176,7 @@ def downloadFiles(token):
 
                                                                 done_output = []
                                                                 for output in status_result_response:
+                                                                    # print(output)
                                                                     if (output["type"] in latest_output_outputs and output[
                                                                         "status"] == "Completed" and output["type"] not in result):
                                                                         logger.info("Downloading {0} of analyzerId: {1}".format(output["type"], analyzerId))
@@ -208,7 +212,12 @@ def downloadFiles(token):
                                                         logger.error(message)
                                                         failed_download.append(True)
                                                 else:
-                                                    token, generated_time = generateToken(configuration_settings)
+                                                    token, generated_time = generateToken_pw_flow(configuration_settings)
+                                        elif result['download_completed']:
+                                            completed_download.append(True)
+                                        else:
+                                            failed_download.append(True)   
+
                                     elif result['download_success']:
                                         completed_download.append(True)
                                     else:

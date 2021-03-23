@@ -21,7 +21,7 @@ This tool is a python script package for uploading files, checking processing st
 ### Prerequisites
 1.	You must have access to Automation Document Processing project.
 2.	You might want to access the Automation Document Processing Knowledge Center web page as a reference. The link is in the Related Links section below.
-3.	You will need a UMS token for authentication
+3.	You will need to provide ums username, password, client id and client secret to generate the UMS token for authentication
 4.  You will need content analyzer basic url to get the APIs work
 5.	You should also decide what output you want to be produced for each file: JSON, and/or PDF. The JSON output will contain the extracted key-value pair information. The PDF will be an enhanced searchable PDF.
 6.	If you selected JSON output, you should know what subset of JSON options you want to be included. Enter all or see documentation for details.
@@ -35,12 +35,14 @@ Update [**config.json**](config.json) with your server connection and options in
 3. **ums_base_url**: The URL to the UMS server for generating the UMS token.
 4. **ums_username**: UMS admin user name
 5. **ums_password**: UMS admin password
-6. **aca_base_url**: The URL to the Content Analyzer API server
-7. **adp_project_id**: Automation Document Processing project ID
-8. **output_options**: List of output options. Available values : json, pdf (case does not matter)
-9. **json_options**: List of json options. Available values : ocr, dc, kvp, sn, hr, th, mt, ai, ds, char (case does not matter)
-10. **ssl_verification**: Boolean whether your system uses SSL certificates. Default is boolean False
-11. **file_type**: This is optional but can be specified if user requires specific file types to be uploaded and not all the BACA accepted file types (doc, docx, pdf, png, pneg, jpg, jpeg, tif, tiff)
+6. **client_id**: UMS client secret
+7. **client_secret**: UMS client secret
+8. **aca_base_url**: The URL to the Content Analyzer API server
+9. **adp_project_id**: Automation Document Processing project ID
+10. **output_options**: List of output options. Available values : json, pdf (case does not matter)
+11. **json_options**: List of json options. Available values : ocr, dc, kvp, sn, hr, th, mt, ai, ds, char (case does not matter)
+12. **ssl_verification**: Boolean whether your system uses SSL certificates. Default is boolean False
+13. **file_type**: This is optional but can be specified if user requires specific file types to be uploaded and not all the BACA accepted file types (doc, docx, pdf, png, pneg, jpg, jpeg, tif, tiff)
 
 ### Sample config.json
 ```
@@ -48,6 +50,8 @@ Update [**config.json**](config.json) with your server connection and options in
   "ums_base_url": "https://sample-ums/ibm.com",
   "ums_username": "admin",
   "ums_password": "password",
+  "client_id": "",
+  "client_secret": "",
   "aca_base_url": "https://sample-aca-backend.ibm.com",
   "adp_project_id": "your-project-id",
   "directory_path": "/sample/input",
@@ -71,7 +75,6 @@ Install the latest **python3**, **pip** and these packages:
     python -m pip install --upgrade pip
     python -m pip install requests
     python -m pip install python-dateutil
-    python -m pip install logging
 
 ### Run the tool
 The tool will upload all the files found in the input directory and check for processing status. As the output files are ready, they will be downloaded to your output directory. Then the output files will be deleted from the server.

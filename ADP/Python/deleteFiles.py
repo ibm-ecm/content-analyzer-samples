@@ -24,7 +24,7 @@ from readConfigJSON import readJSON
 from ssl import SSLError
 from base64 import b64encode
 from checkToken import checkTokenValid
-from checkToken import generateToken
+from checkToken import generateToken_pw_flow
 import datetime as dt
 
 
@@ -89,7 +89,7 @@ def deleteFiles(token):
                                             else:
                                                 result["deleted"] = False
                                         else:
-                                            token, generated_time = generateToken(configuration_settings)
+                                            token, generated_time = generateToken_pw_flow(configuration_settings)
                         except:
                             result["deleted"] = False
                             logger.error("No analyzerID available to delete results. The file upload may have failed. File name: {0}".format(result["filename"]))

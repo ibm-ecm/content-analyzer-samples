@@ -2,7 +2,9 @@
   "ums_base_url": "https://sample-ums/ibm.com",
   "ums_username": "",
   "ums_password": "",
-
+  "client_id": "",
+  "client_secret": "",
+  
   "aca_base_url": "https://sample-aca-backend.ibm.com",
   "adp_project_id": "your-project-id",
 

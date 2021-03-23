@@ -25,7 +25,7 @@ from readConfigJSON import readJSON
 from loggingHandler import logger
 from ssl import SSLError
 from checkToken import checkTokenValid
-from checkToken import generateToken
+from checkToken import generateToken_pw_flow
 import datetime as dt
 
 
@@ -91,7 +91,7 @@ def uploadFiles(token):
                                     logger.error(message)
                                     error.append({'error': message})
                             else:
-                                token, generated_time = generateToken(configuration_settings)
+                                token, generated_time = generateToken_pw_flow(configuration_settings)
 
                         except SSLError as sslerror:
                             logger.error("SSL error was thrown due to certificate failure, set ssl_verification to false in configuration config.json file.")

@@ -39,7 +39,7 @@ def readJSON():
                 list_keys = json_info.keys()
                 value = True
                 expected_keys = ['ums_base_url', 'ums_username', 'ums_password', 'aca_base_url', 'adp_project_id', 
-                        'directory_path', 'output_directory_path', 'output_options', 'json_options']
+                        'directory_path', 'output_directory_path', 'output_options', 'json_options', 'client_id', 'client_secret']
                 for key in expected_keys:
                     if key not in list_keys:
                         logger.error("Missing key: " + key)
@@ -50,12 +50,12 @@ def readJSON():
                     if ("ums_username" not in list_keys or json_info["ums_username"] == "") or ("ums_password" not in list_keys or json_info["ums_password"] == ""):
                         logger.error("Missing ums username or password")
                         value = False
+                    if ("client_id" not in list_keys or json_info["client_id"] == "") or ("client_secret" not in list_keys or json_info["client_secret"] == ""):
+                        logger.error("Missing client id or secret")
+                        value = False
                 if(value):
                     if 'ssl_verification' not in list_keys:
                         json_info['ssl_verification'] = False
-
-                    json_info['client_id'] = json_info['client_id'] if json_info.get('client_id') else "ADP_PYTHON_CLIENT"
-                    json_info['client_secret'] = json_info['client_secret'] if json_info.get('client_secret') else "ADP_PYTHON_CLIENT_SECRET"
 
                     expected_json_options = ['json', 'pdf']
                     json_options = json_info["output_options"].split(',')
