@@ -35,7 +35,7 @@ Update [**config.json**](config.json) with your server connection and options in
 3. **ums_base_url**: The URL to the UMS server for generating the UMS token.
 4. **ums_username**: UMS admin user name
 5. **ums_password**: UMS admin password
-6. **client_id**: UMS client secret
+6. **client_id**: UMS client id
 7. **client_secret**: UMS client secret
 8. **aca_base_url**: The URL to the Content Analyzer API server
 9. **adp_project_id**: Automation Document Processing project ID
@@ -43,6 +43,12 @@ Update [**config.json**](config.json) with your server connection and options in
 11. **json_options**: List of json options. Available values : ocr, dc, kvp, sn, hr, th, mt, ai, ds, char (case does not matter)
 12. **ssl_verification**: Boolean whether your system uses SSL certificates. Default is boolean False
 13. **file_type**: This is optional but can be specified if user requires specific file types to be uploaded and not all the BACA accepted file types (doc, docx, pdf, png, pneg, jpg, jpeg, tif, tiff)
+
+Note: 
+1. Please check **Related Links** section for the commands to get `ums_base_url, ums_username, ums_password, client_id`.
+2. Command to get `client_secret`
+`oc get cm icp4adeploy-aca-config -oyaml | grep UMS_CLIENT_SECRET`
+3. Please contact the project admin to get `aca_base_url, adp_project_id`.
 
 ### Sample config.json
 ```
@@ -68,7 +74,7 @@ Update [**config.json**](config.json) with your server connection and options in
 ```
 
 
-### Developers
+### Before Running the tool
 
 Install the latest **python3**, **pip** and these packages:
 
