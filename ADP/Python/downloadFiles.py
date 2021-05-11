@@ -177,6 +177,7 @@ def downloadFiles(token):
                                                                 done_output = []
                                                                 for output in status_result_response:
                                                                     # print(output)
+                                                                    logger.info("status: {}, type {}, analyzerId: {}, filename: {}".format(output.get("status"),output.get("type"),analyzerId, filename))
                                                                     if (output["type"] in latest_output_outputs and output[
                                                                         "status"] == "Completed" and output["type"] not in result):
                                                                         logger.info("Downloading {0} of analyzerId: {1}".format(output["type"], analyzerId))
@@ -193,8 +194,10 @@ def downloadFiles(token):
 
                                                                         result[output["type"]] = False
                                                                         result[output["type"] + "_error"] = output["status"]
+                                                                        logger.info("Processing failed of analyzerId: {}, filename: {}".format(analyzerId, filename))
                                                                         done_output.append(output["type"])
                                                                     elif output["type"] in result:
+                                                                        logger.info("Processing of analyzerId: {}, filename: {}".format(analyzerId, filename))
                                                                         done_output.append(output["type"])
                                                                 if (len(done_output) == len(latest_output_outputs)):
                                                                     completed_download.append(True)
@@ -204,6 +207,7 @@ def downloadFiles(token):
                                                                     result["download_completed"] = True
 
                                                         else:
+                                                            logger.error("Cannot get status of analyzerId: {}, filename: {}".format(analyzerId, filename))
                                                             result["download_success"] = False
                                                             result["download_failure_reason"] = result_response
                                                             failed_download.append(True)
