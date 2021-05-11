@@ -128,6 +128,7 @@ def downloadFiles(token):
             loop = 0
             failed_download = []
             completed_download = []
+            compelted_check = []
             completed_count = 0
             output_json_path = os.path.join(os.getcwd(), "output.json")
             if(os.path.exists(output_json_path)):
@@ -201,6 +202,7 @@ def downloadFiles(token):
                                                                         done_output.append(output["type"])
                                                                 if (len(done_output) == len(latest_output_outputs)):
                                                                     completed_download.append(True)
+                                                                    compelted_check.append(filename)
 
                                                                 completed = checkCompleted(latest_output_outputs, result)
                                                                 if(completed):
@@ -212,20 +214,11 @@ def downloadFiles(token):
                                                             result["download_failure_reason"] = result_response
                                                             failed_download.append(True)
                                                     else:
-                                                        message = "UMS token is required to upload the files, filename {}".format(filename)
+                                                        message = "UMS token is required to check file status, filename {}".format(filename)
                                                         logger.error(message)
                                                         failed_download.append(True)
                                                 else:
                                                     token, generated_time = generateToken_pw_flow(configuration_settings)
-                                        elif result['download_completed']:
-                                            completed_download.append(True)
-                                        else:
-                                            failed_download.append(True)   
-
-                                    elif result['download_success']:
-                                        completed_download.append(True)
-                                    else:
-                                        failed_download.append(True)
 
                                 else:
                                     logger.error("We could not find any information to download files from.")
@@ -247,26 +240,29 @@ def downloadFiles(token):
                             json.dump(output_json, open("output.json", 'w'), indent=4)
                             completed_count = len(failed_download) + len(completed_download)
 
+
+                        logger.info("count, failed {}, completed {}".format(len(failed_download), len(completed_download)))
                         if (completed_count >= len(output_json_result)):
+                            print(compelted_check)
                             pending_completion = False
                         else:
                             if (loop >= 1000):
                                 pending_completion = False
                                 logger.error("Reached maximum number of download retries.")
                             else:
-                                time.sleep(5)
+                                time.sleep(10)
                     else:
                         pending_completion = False
                         logger.error("No results available to download.")
                         return True
 
+
+                logger.info("Done downloading all output files to your output_directory_path")
+                logger.info("Download status reported in output.json")
+                if(loop < 999):
+                    return True
                 else:
-                    logger.info("Done downloading all output files to your output_directory_path")
-                    logger.info("Download status reported in output.json")
-                    if(loop < 999):
-                        return True
-                    else:
-                        return False
+                    return False
             else:
                 logger.error("output.json file does not exist. No results available to download.")
 

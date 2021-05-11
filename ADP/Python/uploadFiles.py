@@ -49,7 +49,6 @@ def uploadFiles(token):
             output_results = []
             for subdir, dirs, files in os.walk(dir_path):
                 for file in files:
-                    time.sleep(1)
                     file_path = os.path.join(subdir, file)
                     new_file = copy.copy(file)
 
