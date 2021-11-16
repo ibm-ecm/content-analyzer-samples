@@ -15,8 +15,6 @@
   "json_options": "ocr,dc,kvp,sn,hr,th,mt,ai,ds",
   "ssl_verification": false,
   "file_type": [
-    "pdf",
-    "docx",
-    "doc"
+    "pdf"
   ]
 }
