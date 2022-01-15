@@ -12,7 +12,7 @@ DISCLAIMER OF WARRANTIES.
  has been advised of the possibility of such damages. If you do not agree with
  these terms, do not use the sample code.
 
- Copyright IBM Corp. 2021 All Rights Reserved.
+ Copyright IBM Corp. 2022 All Rights Reserved.
 
  To run, see README.md
 '''
@@ -55,4 +55,4 @@ if __name__ == '__main__':
         seconds = (endtime - starttime).total_seconds()
         logger.info("API Sample tool reupload ended. Processing time took {0} seconds, Disclaimer: This includes time to upload, download and delete and has nothing to do with BACA's actual processing time.".format(int(seconds)))
     else:
-        logger.error("Failed to generate ums token to continue")
+        logger.error("Failed to generate token to continue")

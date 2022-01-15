@@ -1,11 +1,8 @@
 {
-  "ums_base_url": "https://sample-ums/ibm.com",
-  "ums_username": "",
-  "ums_password": "",
-  "client_id": "",
-  "client_secret": "",
+  "zen_host": "route_host_without_https",
+  "zen_username": "",
+  "zen_password": "",
   
-  "aca_base_url": "https://sample-aca-backend.ibm.com",
   "adp_project_id": "your-project-id",
 
   "directory_path": "/sample/input",

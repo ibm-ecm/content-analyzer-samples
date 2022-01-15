@@ -12,7 +12,7 @@ DISCLAIMER OF WARRANTIES.
  has been advised of the possibility of such damages. If you do not agree with
  these terms, do not use the sample code.
 
- Copyright IBM Corp. 2021 All Rights Reserved.
+ Copyright IBM Corp. 2022 All Rights Reserved.
 
  To run, see README.md
 '''
@@ -123,7 +123,8 @@ def downloadFiles(token):
     pending_completion = True
     configuration, configuration_settings = readJSON()
     if (configuration):
-        token, generated_time = checkTokenValid(token, configuration_settings)
+        token = checkTokenValid(token, configuration_settings)
+        starttime = dt.datetime.now()
         if token:
             loop = 0
             failed_download = []
@@ -161,8 +162,8 @@ def downloadFiles(token):
 
                                             else:
                                                 current_time = dt.datetime.now()
-                                                seconds = (current_time - generated_time).total_seconds()
-                                                if seconds < 7000: # ums token is not expired (7199 = 2 hours)
+                                                seconds = (current_time - starttime).total_seconds()
+                                                if seconds < 7000 * 5: # refresh zen token every 10 hours (7199 = 2 hours)
                                                     if token:
                                                         headers = {
                                                             'Authorization': 'Bearer {}'.format(token)
@@ -214,11 +215,11 @@ def downloadFiles(token):
                                                             result["download_failure_reason"] = result_response
                                                             failed_download.append(True)
                                                     else:
-                                                        message = "UMS token is required to check file status, filename {}".format(filename)
+                                                        message = "Zen token is required to check file status, filename {}".format(filename)
                                                         logger.error(message)
                                                         failed_download.append(True)
                                                 else:
-                                                    token, generated_time = generateToken_pw_flow(configuration_settings)
+                                                    token, checked_time = generateToken_pw_flow(configuration_settings)
 
                                 else:
                                     logger.error("We could not find any information to download files from.")
@@ -268,7 +269,7 @@ def downloadFiles(token):
 
                 return False
         else:
-            logger.error("UMS token is required to download the files")
+            logger.error("Zen token is required to download the files")
             return False
     else:
         logger.error("Check your configuration file (config.json) for correct format and valid parameters")
@@ -282,8 +283,8 @@ if __name__ == '__main__':
     output_json_path = os.path.join(os.getcwd(), "output.json")
     if(os.path.exists(output_json_path)):
         output_json = json.load(open(output_json_path, "r"))
-        token = output_json.get('ums_token') if output_json.get('ums_token') else "token"
-        print(token)
+        token = output_json.get('zen_token') if output_json.get('zen_token') else "token"
+        # print(token)
     else:
         token = "token"
     downloadFiles(token)

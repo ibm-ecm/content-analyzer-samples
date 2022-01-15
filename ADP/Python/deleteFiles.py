@@ -12,7 +12,7 @@ DISCLAIMER OF WARRANTIES.
  has been advised of the possibility of such damages. If you do not agree with
  these terms, do not use the sample code.
 
- Copyright IBM Corp. 2021 All Rights Reserved.
+ Copyright IBM Corp. 2022 All Rights Reserved.
 
  To run, see README.md
 '''
@@ -61,8 +61,9 @@ def deleteFile(configuration_settings, token, analyzerId):
 def deleteFiles(token):
     configuration, configuration_settings = readJSON()
     if (configuration):
-        token, generated_time = checkTokenValid(token, configuration_settings)
+        token = checkTokenValid(token, configuration_settings)
         if token:
+            starttime = dt.datetime.now()
             output_json_path = os.path.join(os.getcwd(), "output.json")
             if(os.path.exists(output_json_path)):
                 output_json = json.load(open(output_json_path, "r"))
@@ -71,7 +72,6 @@ def deleteFiles(token):
                     new_output_json_result = []
                     for outresult in output_json_result:
                         result = outresult
-                        print('---1')
                         try:
                             if "response" in result and "result" in json.loads(result["response"]) and "data" in json.loads(result["response"])["result"][0] and "analyzerId" in json.loads(result["response"])["result"][0]["data"]:
                                 if ("deleted" in result and result["deleted"] == False) or "deleted" not in result:
@@ -80,8 +80,8 @@ def deleteFiles(token):
                                     analyzerId = response["result"][0]["data"]["analyzerId"]
 
                                     current_time = dt.datetime.now()
-                                    seconds = (current_time - generated_time).total_seconds()
-                                    if seconds < 7000: # ums token is not expired (7199 = 2 hours)
+                                    seconds = (current_time - starttime).total_seconds()
+                                    if seconds < 7000 * 5: # refresh zen token every 10 hours (7199 = 2 hours)
                                         if token:
                                             status, result_response = deleteFile(configuration_settings, token, analyzerId)
                                             if (status):
@@ -89,7 +89,7 @@ def deleteFiles(token):
                                             else:
                                                 result["deleted"] = False
                                         else:
-                                            token, generated_time = generateToken_pw_flow(configuration_settings)
+                                            token = generateToken_pw_flow(configuration_settings)
                         except:
                             result["deleted"] = False
                             logger.error("No analyzerID available to delete results. The file upload may have failed. File name: {0}".format(result["filename"]))
@@ -105,7 +105,7 @@ def deleteFiles(token):
             else:
                 logger.error("output.json file does not exist. No results available to delete.")
         else:
-            logger.error("UMS token is required to delete files")
+            logger.error("Zen token is required to delete files")
 
 
 if __name__ == '__main__':
@@ -115,8 +115,8 @@ if __name__ == '__main__':
     output_json_path = os.path.join(os.getcwd(), "output.json")
     if(os.path.exists(output_json_path)):
         output_json = json.load(open(output_json_path, "r"))
-        token = output_json.get('ums_token') if output_json.get('ums_token') else "token"
-        print(token)
+        token = output_json.get('zen_token') if output_json.get('zen_token') else "token"
+        # print(token)
     else:
         token = "token"
     deleteFiles(token)

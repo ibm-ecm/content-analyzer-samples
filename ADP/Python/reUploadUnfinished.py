@@ -12,7 +12,7 @@ DISCLAIMER OF WARRANTIES.
  has been advised of the possibility of such damages. If you do not agree with
  these terms, do not use the sample code.
 
- Copyright IBM Corp. 2021 All Rights Reserved.
+ Copyright IBM Corp. 2022 All Rights Reserved.
 
  To run, see README.md
 '''
@@ -33,7 +33,7 @@ import datetime as dt
 def reUploadFiles(token):
     configuration, configuration_settings = readJSON()
     if (configuration):
-        token, generated_time = checkTokenValid(token, configuration_settings)
+        token = checkTokenValid(token, configuration_settings)
         if token:
             starttime = dt.datetime.now()
             dir_path = configuration_settings["directory_path"]
@@ -77,8 +77,8 @@ def reUploadFiles(token):
                                     # Make request
                                     try:
                                         current_time = dt.datetime.now()
-                                        seconds = (current_time - generated_time).total_seconds()
-                                        if seconds < 7000: # ums token is not expired (7199 = 2 hours)
+                                        seconds = (current_time - starttime).total_seconds()
+                                        if seconds < 7000 * 5: # refresh zen token every 10 hours (7199 = 2 hours)
                                             if token:
                                                 headers = {
                                                     'Authorization': 'Bearer {}'.format(token)
@@ -93,11 +93,11 @@ def reUploadFiles(token):
                                                     dict_object.update({"response": response.text, "output_type": configuration_settings['output_options'].split(",")})
                                                     output_results.append(dict_object)
                                             else:
-                                                message = "UMS token is required to reUpload the files, filename {}".format(file_name)
+                                                message = "Zen token is required to reUpload the files, filename {}".format(file_name)
                                                 logger.error(message)
                                                 error.append({'error': message})
                                         else:
-                                            token, generated_time = generateToken_pw_flow(configuration_settings)
+                                            token, checked_time = generateToken_pw_flow(configuration_settings)
 
                                     except SSLError as sslerror:
                                         logger.error("SSL error was thrown due to certificate failure, set ssl_verification to false in configuration config.json file.")
@@ -127,7 +127,7 @@ def reUploadFiles(token):
             else:
                 logger.info("output.json file does not exist. No results available to reupload.")
         else:
-            logger.error("UMS token is required to reUpload the files")
+            logger.error("Zen token is required to reUpload the files")
             return False
     else:
         logger.info("Check your configuration file (config.json) for correct format and valid parameters")
@@ -141,7 +141,7 @@ if __name__ == '__main__':
         output_json_path = os.path.join(os.getcwd(), "output.json")
         if(os.path.exists(output_json_path)):
             output_json = json.load(open(output_json_path, "r"))
-            token = output_json.get('ums_token') if output_json.get('ums_token') else "token"
+            token = output_json.get('zen_token') if output_json.get('zen_token') else "token"
             print(token)
         else:
             token = "token"

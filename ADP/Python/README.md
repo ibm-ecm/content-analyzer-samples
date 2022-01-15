@@ -9,7 +9,7 @@ This tool is a python script package for uploading files, checking processing st
 + [**reupload.py**](reupload.py) - Starting point of the tool that will redo the failed or unfinished processing: re-upload, download, and delete
 
 + [**readConfigJSON.py**](readConfigJSON.py) - Verify the configuration file
-+ [**checkToken.py**](checkToken.py) - Check or generate the UMS token for authentication
++ [**checkToken.py**](checkToken.py) - Check or generate the token for authentication
 + [**uploadFiles.py**](uploadFiles.py) - Call directly just to do uploads
 + [**downloadFiles.py**](downloadFiles.py) - Call directly just to do downloads
 + [**deleteFiles.py**](deleteFiles.py) - Call directly just to do deletes
@@ -21,9 +21,8 @@ This tool is a python script package for uploading files, checking processing st
 ### Prerequisites
 1. You must have access to Automation Document Processing project.
 2. You might want to access the Automation Document Processing Knowledge Center web page as a reference. The link is in the Related Links section below.
-3. You will need to provide ums username, password, client id and client secret to generate the UMS token for authentication
-4. You will need content analyzer basic url to get the APIs work
-5. You should know what subset of JSON options you want to be included. Enter all or see documentation for details.
+3. You will need to provide Zen host, username, and password  to generate a token for authentication
+4. You should know what subset of JSON options you want to be included. Enter all or see documentation for details.
 
 ### Input
 
@@ -31,12 +30,9 @@ Update [**config.json**](config.json) with your server connection and options in
 
 1. **directory_path**: The directory containing the files to be processed, supports nested directory files
 2. **output_directory_path**: The directory to write the output files (JSON) after processing. If the directory does not exist, the script will create it.
-3. **ums_base_url**: The URL to the UMS server for generating the UMS token.
-4. **ums_username**: UMS admin user name
-5. **ums_password**: UMS admin password
-6. **client_id**: UMS client id
-7. **client_secret**: UMS client secret
-8. **aca_base_url**: The URL to the Content Analyzer API server
+3. **zen_host**: The URL to the server for generating the Zen token and sending the file processing reqests
+4. **zen_username**: The username that belongs  to the appropriate group such as `captureadmins` or `projectadmins`. For more information on roles, please refer to [here](https://www.ibm.com/docs/en/SSYHZ8_21.0.3/com.ibm.dba.dp/topics/con_deploy_permission.html)
+5. **zen_password**: Password
 9. **adp_project_id**: Automation Document Processing project ID
 10. **output_options**: Output options. ADP only support json. The output will contain the extracted key-value pair information
 11. **json_options**: List of json options. Available values : ocr, dc, kvp, sn, hr, th, mt, ai, ds, char (case does not matter)
@@ -44,22 +40,17 @@ Update [**config.json**](config.json) with your server connection and options in
 13. **file_type**: This is optional but can be specified if user requires specific file types to be uploaded and not all the BACA accepted file types ('pdf', 'jpg', 'jpeg', 'tif', 'tiff', 'png', 'doc', 'docx')
 
 Note: 
-1. Please check **Related Links** section for the commands to get `ums_base_url, ums_username, ums_password, client_id`.
-2. Command to get `client_secret`
-
-`oc get cm icp4adeploy-aca-config -oyaml | grep UMS_CLIENT_SECRET`
-3. Please contact the project admin to get `aca_base_url, adp_project_id`.
+1. Command to get `zen_host`:
+`oc get route cpd -o jsonpath="{.spec.host}"`
+Please check **Related Links** section for the commands to get more details.
 
 ### Sample config.json
 ```
 {
-  "ums_base_url": "https://sample-ums/ibm.com",
-  "ums_username": "admin",
-  "ums_password": "password",
-  "client_id": "",
-  "client_secret": "",
-  "aca_base_url": "https://sample-aca-backend.ibm.com",
-  "adp_project_id": "your-project-id",
+  "zen_host": "route-host-without-https",
+  "zen_username": "admin",
+  "zen_password": "password",
+  "adp_project_id": "your-project-name",
   "directory_path": "/sample/input",
   "output_directory_path": "/sample/output",
   "output_options": "json",
@@ -117,7 +108,7 @@ server. These scripts rely on previous uploads and references the **output.json*
 
 
 ### Related Links
-https://www.ibm.com/support/knowledgecenter/SSYHZ8_20.0.x/com.ibm.dba.dp/topics/con_ca_api.html
+https://www.ibm.com/docs/en/cloud-paks/cp-biz-automation/21.0.3?topic=integrations-automation-document-processing-api
 
 
 ### DISCLAIMER OF WARRANTIES
@@ -133,4 +124,4 @@ https://www.ibm.com/support/knowledgecenter/SSYHZ8_20.0.x/com.ibm.dba.dp/topics/
  has been advised of the possibility of such damages. If you do not agree with
  these terms, do not use the sample code.
 
- Copyright IBM Corp. 2021 All Rights Reserved.
+ Copyright IBM Corp. 2022 All Rights Reserved.

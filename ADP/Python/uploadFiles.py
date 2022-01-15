@@ -12,7 +12,7 @@ DISCLAIMER OF WARRANTIES.
  has been advised of the possibility of such damages. If you do not agree with
  these terms, do not use the sample code.
 
- Copyright IBM Corp. 2021 All Rights Reserved.
+ Copyright IBM Corp. 2022 All Rights Reserved.
 
  To run, see README.md
 '''
@@ -35,7 +35,7 @@ import datetime as dt
 def uploadFiles(token):
     configuration, configuration_settings = readJSON()
     if (configuration):
-        token, generated_time = checkTokenValid(token, configuration_settings)
+        token = checkTokenValid(token, configuration_settings)
         if token:
             starttime = dt.datetime.now()
             dir_path = configuration_settings["directory_path"]
@@ -43,6 +43,7 @@ def uploadFiles(token):
 
             errors = []
             upload_url = configuration_settings['aca_main_url']
+            logger.info("ACA main url is: {0} ".format(upload_url))
             accepted_extensions = configuration_settings["accepted_extensions"]
             file_types =  configuration_settings['file_type'] if 'file_type' in configuration_settings and type(configuration_settings['file_type'] is list) and len(configuration_settings['file_type']) > 0 else accepted_extensions
             file_types = [f_type.lower() for f_type in file_types]
@@ -65,13 +66,14 @@ def uploadFiles(token):
                             pass
 
                         files = {'file': (file_name, open(file_path, 'rb'), "multipart/form-data")}
+                        # print(files)
                         dict_object = {"filename": file_name, "path": os.path.basename(subdir), "full_path": os.path.join(os.path.abspath(subdir), old_file_name + "." + str(file_extension))}
 
                         # Make request
                         try:
                             current_time = dt.datetime.now()
-                            seconds = (current_time - generated_time).total_seconds()
-                            if seconds < 7000: # ums token is not expired (7199 = 2 hours)
+                            seconds = (current_time - starttime).total_seconds()
+                            if seconds < 7000 * 5: # refresh zen token every 10 hours (7199 = 2 hours)
                                 if token:
                                     headers = {
                                         'Authorization': 'Bearer {}'.format(token)
@@ -80,6 +82,7 @@ def uploadFiles(token):
                                             data={'jsonOptions': configuration_settings['json_options'], 'responseType': configuration_settings['output_options']}, headers=headers, verify=configuration_settings['ssl_verification'])
                                     if response.status_code >= 400:
                                         logger.error("HTTP error {0} occurred when uploading file: {1} ".format(str(response.status_code), file_path))
+                                        print(response.text)
                                         error = response.text if response.status_code == 500 else json.loads(response.text)
                                         logger.error("Error details: {}".format(error))
                                         dict_object.update({"error": response.text})
@@ -88,11 +91,11 @@ def uploadFiles(token):
                                         dict_object.update({"response": response.text, "output_type": configuration_settings['output_options'].split(",")})
                                         output_results.append(dict_object)
                                 else:
-                                    message = "UMS token is required to upload the files, filename {}".format(file_name)
+                                    message = "Zen token is required to upload the files, filename {}".format(file_name)
                                     logger.error(message)
                                     error.append({'error': message})
                             else:
-                                token, generated_time = generateToken_pw_flow(configuration_settings)
+                                token, checked_time = generateToken_pw_flow(configuration_settings)
 
                         except SSLError as sslerror:
                             logger.error("SSL error was thrown due to certificate failure, set ssl_verification to false in configuration config.json file.")
@@ -107,7 +110,7 @@ def uploadFiles(token):
 
                     endtime = dt.datetime.now()
                     seconds = (endtime - starttime).total_seconds()
-                    result = {"ums_token": token,"starttime": str(starttime), "endtime": str(endtime), "no_of_files": count,
+                    result = {"zen_token": token,"starttime": str(starttime), "endtime": str(endtime), "no_of_files": count,
                             "output_results": output_results, "no_output_results": len(output_results),
                             "total_upload_seconds": seconds, "upload_errors": errors, "no_of_upload_errors": len(errors)}
                     json.dump(result, open(os.path.join(os.getcwd(), "output.json"), 'w'), indent=4)
@@ -123,7 +126,7 @@ def uploadFiles(token):
                 logger.info("Done uploading {0} files".format(count))
                 return True
         else:
-            logger.error("UMS token is required to upload the files")
+            logger.error("Zen token is required to upload the files")
             return False
     else:
         logger.error("Check your configuration file (config.json) for correct format and valid parameters")
@@ -136,7 +139,7 @@ if __name__ == '__main__':
         output_json_path = os.path.join(os.getcwd(), "output.json")
         if(os.path.exists(output_json_path)):
             output_json = json.load(open(output_json_path, "r"))
-            token = output_json.get('ums_token') if output_json.get('ums_token') else "token"
+            token = output_json.get('zen_token') if output_json.get('zen_token') else "token"
             print(token)
         else:
             token = "token"

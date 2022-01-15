@@ -12,7 +12,7 @@ DISCLAIMER OF WARRANTIES.
  has been advised of the possibility of such damages. If you do not agree with
  these terms, do not use the sample code.
 
- Copyright IBM Corp. 2021 All Rights Reserved.
+ Copyright IBM Corp. 2022 All Rights Reserved.
 
  To run, see README.md
 '''
@@ -38,20 +38,17 @@ def readJSON():
             else:
                 list_keys = json_info.keys()
                 value = True
-                expected_keys = ['ums_base_url', 'ums_username', 'ums_password', 'aca_base_url', 'adp_project_id', 
-                        'directory_path', 'output_directory_path', 'output_options', 'json_options', 'client_id', 'client_secret']
+                expected_keys = ['zen_host', 'zen_username', 'zen_password', 'adp_project_id', 
+                        'directory_path', 'output_directory_path', 'output_options', 'json_options']
                 for key in expected_keys:
                     if key not in list_keys:
                         logger.error("Missing key: " + key)
                         value = False
                     elif not json_info.get(key):
                         logger.error("Missing value for key " + key)
-                if "ums_base_url" in list_keys and json_info["ums_base_url"]:
-                    if ("ums_username" not in list_keys or json_info["ums_username"] == "") or ("ums_password" not in list_keys or json_info["ums_password"] == ""):
-                        logger.error("Missing ums username or password")
-                        value = False
-                    if ("client_id" not in list_keys or json_info["client_id"] == "") or ("client_secret" not in list_keys or json_info["client_secret"] == ""):
-                        logger.error("Missing client id or secret")
+                if "zen_host" in list_keys and json_info["zen_host"]:
+                    if ("zen_username" not in list_keys or json_info["zen_username"] == "") or ("zen_password" not in list_keys or json_info["zen_password"] == ""):
+                        logger.error("Missing username or password")
                         value = False
                 if(value):
                     if 'ssl_verification' not in list_keys:
@@ -68,7 +65,7 @@ def readJSON():
                         logger.error("JSON selected however no json_options was set")
                         return false_result
                     elif ("json" in json_info["output_options"] or "pdf" in json_info["output_options"]):
-                        json_info["aca_main_url"] = json_info['aca_base_url'].strip() + '/v1/projects/' + json_info['adp_project_id'] + '/analyzers'
+                        json_info["aca_main_url"] = 'https://' + json_info['zen_host'].strip() + '/adp/aca/v1/projects/' + json_info['adp_project_id'] + '/analyzers'
                         json_info["accepted_extensions"] = ["pdf", "jpeg", "jpg", "png", "pneg", "tiff", "tif", "docx", "doc"]
                         return true_result
                     else:
