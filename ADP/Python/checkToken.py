@@ -73,6 +73,7 @@ def generateToken_pw_flow(config):
         return None
 
 
+# if token is valid, request response will be 200, or it will be 401 Unauthorized
 def checkTokenValid(token, config):
     if token:
         if config:
@@ -86,15 +87,14 @@ def checkTokenValid(token, config):
                 response = requests.request("GET", zen_check_token_url, headers=headers, verify=config['ssl_verification'])
                     
                 if response.status_code == 200:
-                    content = getContent(response)
-                    res = content.get('uid')
-                    if res:
-                        logger.info('zen token provided is valid')
-                        return token
-                    else:
-                        logger.info('zen token provided is invalid or expired, trying to generate a new one')
-                        token = generateToken_pw_flow(config)
-                        return token
+                    # content = getContent(response)
+                    # res = content.get('uid')
+                    logger.info('zen token provided is valid')
+                    return token
+                elif response.status_code == 401:
+                    logger.info('zen token provided is invalid or expired, trying to generate a new one')
+                    token = generateToken_pw_flow(config)
+                    return token
                 else:
                     logger.error("Failed to check the token valid or not")
                     content = getContent(response)
